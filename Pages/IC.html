@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="overflow-x-hidden scrollbar-hide" lang="en">
+<head>
+        <title>Home Page</title>
+
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/png" href="../SVG/Logo.svg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <style>
+            :root {
+                --white: #FFFFFF;
+                --red: #D80000;
+                --black: #0F0F0F;
+                --font-zendots: "Zen Dots", sans-serif;
+                --font-ubuntu: "Ubuntu", sans-serif;
+                --font-poppins: "Poppins", sans-serif;
+            }
+            .scrollbar-hide {
+              -ms-overflow-style: none;
+              scrollbar-width: none;
+            }
+
+            .scrollbar-hide::-webkit-scrollbar {
+              display: none;
+            }
+        </style>
+</head>
+<body id="body" class="w-full h-auto m-0 p-0 scroll-smooth select-none relative bg-black text-white lg:overflow-x-visible">
+
+    <nav class="w-full h-[5.3rem] px-24 hidden lg:flex justify-between items-center bg-black sticky top-0 z-50 shadow-[0px_4px_13.5px_1px_rgba(255,255,255,0.08)]">
+        <a href="../index.html" id="logo" draggable="false" class="w-auto h-auto flex justify-center items-center gap-2 cursor-pointer">
+            <img src="../SVG/Logo.svg" alt="Logo" draggable="false" class="w-16 h-auto">
+            <div id="L-Text" class="w-auto h-auto flex flex-col justify-center items-center">
+                <h1 class="font-['Zen_Dots'] text-sm">CaliperPlus</h1>
+                <h6 class="font-['Ubuntu'] text-[8px] font-medium">YOUR CAR Detailing SHOP</h6>
+            </div>
+        </a>
+        <ul class="w-auto h-auto flex justify-center items-center gap-16 font-['Ubuntu'] text-sm font-medium">
+            <details id="Hover-Details" class="w-auto h-auto relative list-none text-center group  flex justify-center items-center">
+                <summary class="w-auto h-auto relative list-none flex justify-center items-center gap-1 cursor-pointer">
+                    <h3 class="uppercase font-medium tracking-wider text-white hover:text-red-700">Our Services</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="transition-transform duration-200 group-open:rotate-180" width="12" height="12" viewBox="0 0 16 16"><path fill="#fff" fill-rule="non-zero" d="M13.069 5.157L8.384 9.768a.546.546 0 0 1-.768 0L2.93 5.158a.55.55 0 0 0-.771 0a.53.53 0 0 0 0 .759l4.684 4.61a1.65 1.65 0 0 0 2.312 0l4.684-4.61a.53.53 0 0 0 0-.76a.55.55 0 0 0-.771 0"/></svg>
+                </summary>
+                <ul class="w-[12rem] h-auto absolute list-none text-center flex flex-col justify-start items-center gap-4 text-white text-sm font-medium font-['Poppins'] z-50 bg-black mt-10 py-6 -ml-40 shadow-[0px_4px_11.199999809265137px_0px_rgba(255,255,255,0.1)] rounded">
+                    <a href="CG.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Ceramic & Graphene Coatings</a>
+                    <a href="PPF.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Paint Protection Film</a>
+                    <a href="BS.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Body-Shop (Denting & Painting)</a>
+                    <a href="WW.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Wrap Jobs</a>
+                    <a href="DI.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Detailing and Interior cleaning</a>
+                    <a href="IC.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Insurance Claims</a>
+                    <a href="#" draggable="false" class="hover:text-red-700 cursor-pointer transition">Other Services</a>
+                </ul>
+            </details>
+            <a href="../Pages/Service.html" draggable="false" class="w-auto h-auto uppercase font-medium tracking-wider hover:text-red-700 cursor-pointer transition">Service Enquiry</a>
+        </ul>
+    </nav>
+
+    <nav class="w-full h-auto px-6 py-6 flex lg:hidden justify-between items-center bg-black sticky top-0 z-50 shadow-[0px_4px_13.5px_1px_rgba(255,255,255,0.08)]">
+        <a href="../index.html" id="logo" draggable="false" class="w-auto h-auto flex justify-center items-center gap-1 cursor-pointer">
+            <img src="../SVG/Logo.svg" alt="Logo" draggable="false" class="w-10 h-auto">
+            <div id="L-Text" class="w-auto h-auto flex flex-col justify-center items-start gap-1">
+                <h1 class="text-[9.91px] font-normal font-['Zen_Dots'] leading-3">CaliperPlus</h1>
+                <h6 class="font-['Ubuntu'] text-[4.58px] font-medium uppercase leading-[5.40px] tracking-wide">YOUR CAR Detailing SHOP</h6>
+            </div>
+        </a>
+        <details class="relative group">
+            <summary class="list-none cursor-pointer flex items-center justify-center p-2 rounded-xl">
+                <img src="../SVG/Hamburgers.svg" alt="Open services menu" draggable="false">
+            </summary>
+            <div class="absolute top-12 -translate-x-[82.5vw] self-center w-[100vw] bg-black text-white shadow-2xl p-8 flex flex-col justify-center items-center gap-3 animate-[fadeIn_0.5s_ease-in-out]">
+                <a href="../Pages/Service.html" draggable="false" class="text-base font-medium font-['Ubuntu'] uppercase tracking-widest text-center hover:text-red-700 cursor-pointer transition">Service Enquiry</a>
+                <div class="w-24 h-px bg-white/40"></div>
+                <h3 class="text-base font-medium font-['Ubuntu'] uppercase tracking-widest text-center">Our Services</h3>
+                <ul class="flex flex-col gap-3 text-base font-normal font-['Poppins'] text-center">
+                    <a href="CG.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Ceramic & Graphene Coatings</a>
+                    <a href="PPF.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Paint Protection Films</a>
+                    <a href="BS.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Body-Shop (Denting & Painting)</a>
+                    <a href="WW.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Wrap Jobs</a>
+                    <a href="DI.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Detailing & Interior Cleaning</a>
+                    <a href="IC.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Insurance Claims</a>
+                    <a href="#" draggable="false" class="hover:text-red-700 cursor-pointer transition">Other Services</a>
+                </ul>
+            </div>
+        </details>
+    </nav>
+
+    <div id="Hero-Section" class="w-full h-auto flex flex-col justify-start items-center gap-10 px-6 lg:px-0 pb-10">
+        <div id="Page-address" class="w-full h-[4rem] font-['Poppins'] flex items-center justify-start gap-2 text-sm font-medium lg:px-24">
+            <a href="../index.html" draggable="false" class="cursor-pointer hover:text-red-700">HOME</a>
+            <h5 class="text-base">&gt;&gt;</h5>
+            <h5 class="cursor-pointer hover:text-red-700">Insurance Claims</h5>
+        </div>
+        <h1 class="text-lg lg:text-4xl text-center tracking-widest font-normal font-['Zen_Dots']">Insurance claim </h1>
+        <section class="w-full lg:w-[90%] h-auto bg-black flex flex-col lg:flex-row overflow-hidden gap-10 px-2 lg:px-6">
+            <div class="w-92 lg:w-2/5 flex flex-col justify-start items-center gap-10">
+                <img src="../Images/IC-H-1.png" draggable="false" class="w-auto rounded-[1.5rem]" />
+                <img src="../Images/IC-H-2.png" draggable="false" class="w-auto rounded-[1.5rem] hidden lg:block" />
+            </div>
+            <div class="flex flex-col justify-start items-center lg:items-start gap-6 text-center lg:w-3/5 h-auto">
+                <div class="flex flex-col justify-center lg:items-start gap-2 text-center w-full h-auto">
+                    <p class="text-sm lg:text-sm font-medium tracking-widest">Hassle-Free Claims. Expert Repairs. Zero Stress.</p>
+                    <p class="text-sm lg:text-left leading-6 tracking-wider">Dealing with car insurance after an accident can be confusing and time-consuming. Our Car Insurance Claim Assistance service handles the entire process for you — from paperwork to approvals — so you can focus on getting back on the road.</p>
+                </div>
+                <div class="flex flex-col justify-center lg:items-start gap-4 text-center w-full h-auto">
+                    <p class="text-sm lg:text-sm font-medium tracking-widest">How Our Insurance Claim Process Works</p>
+                    <div class="flex flex-col justify-center lg:items-start text-center w-full h-auto gap-4">
+                        <div class="text-sm flex flex-col justify-start lg:items-start">
+                            <p class="text-sm lg:text-sm font-medium tracking-widest">1. Damage Inspection</p>
+                            <p>We inspect your vehicle and prepare a detailed damage report with photos.</p>
+                        </div>
+                        <div class="text-sm flex flex-col justify-start lg:items-start">
+                            <p class="text-sm lg:text-sm font-medium tracking-widest">2. Insurance Coordination</p>
+                            <p>Our team coordinates directly with your insurance company and surveyor.</p>
+                        </div>
+                        <div class="text-sm flex flex-col justify-start lg:items-start">
+                            <p class="text-sm lg:text-sm font-medium tracking-widest">3. Claim Documentation</p>
+                            <p>We assist you with all required documents to avoid delays or rejections.</p>
+                        </div>
+                        <div class="text-sm flex flex-col justify-start lg:items-start">
+                            <p class="text-sm lg:text-sm font-medium tracking-widest">4. Survey & Approval</p>
+                            <p>Vehicle survey is conducted and claim approval is followed up professionally.</p>
+                        </div>
+                        <div class="text-sm flex flex-col justify-start lg:items-start">
+                            <p class="text-sm lg:text-sm font-medium tracking-widest">5. Repair & Restoration</p>
+                            <p>Once approved, repairs are carried out using genuine parts and expert workmanship.</p>
+                        </div>
+                        <div class="text-sm flex flex-col justify-start lg:items-start">
+                            <p class="text-sm lg:text-sm font-medium tracking-widest">6. Final Delivery</p>
+                            <p>Your car is delivered after quality checks — repaired, repainted, and restored.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col justify-center items-center lg:items-start gap-2 text-center h-auto">
+                    <div class="text-sm flex flex-col justify-start lg:items-start">
+                        <p class="text-sm lg:text-sm font-medium tracking-widest">Insurance Companies We Work With</p>
+                        <p class="text-sm lg:text-left leading-6 tracking-wider">We provide smooth claim support with most leading insurance providers, including:</p>
+                    </div>
+                    <div class="w-[70%] grid grid-cols-4 grid-rows-1 gap-2 justify-center items-center mt-4">
+                        <img src="../Images/IC-I-1.png" draggable="false" class="w-full h-full row-span-1 col-span-2 object-contain">
+                        <img src="../Images/IC-I-2.png" draggable="false" class="w-full h-full row-span-1 col-span-1 object-contain">
+                        <img src="../Images/IC-I-3.png" draggable="false" class="w-full h-full row-span-1 col-span-1 object-contain">
+                    </div>
+                    <div class="w-[70%] h-auto grid grid-cols-12 grid-rows-1 gap-2 justify-center items-center">
+                        <img src="../Images/IC-I-4.png" draggable="false" class="w-full h-full row-span-1 col-span-3 object-contain">
+                        <img src="../Images/IC-I-5.png" draggable="false" class="w-full h-full row-span-1 col-span-4 object-contain">
+                        <img src="../Images/IC-I-6.png" draggable="false" class="w-full h-full row-span-1 col-span-5 object-contain">
+                    </div>
+                    <div class="w-[70%] grid grid-cols-2 grid-rows-1 gap-2 justify-center items-center">
+                        <img src="../Images/IC-I-7.png" draggable="false" class="w-full h-full row-span-1 col-span-1 w-full object-contain">
+                        <div class="w-full h-full row-span-1 col-span-1 bg-white/80 rounded-md flex items-center justify-center px-8">
+                            <span class="text-3xl font-bold font-['Ubuntu'] text-black">20+</span>
+                            <span class="text-base font-bold font-['Ubuntu'] text-black leading-4">Insurance Companies</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-sm lg:text-left leading-6 tracking-wider">(Availability may vary based on policy type and coverage.)</p>
+                <button id="SP7" class="w-64 lg:w-64 h-12 lg:h-12 relative rounded-tl-[5px] lg:rounded-tl-[5px] rounded-br-[5px] lg:rounded-br-[5px] rounded-tr-[16px] lg:rounded-tr-[30px] rounded-bl-[16px] lg:rounded-bl-[30px] outline outline-[3px] outline-offset-[-3px] outline-red-700 overflow-hidden text-red-700 text-sm lg:text-xs font-normal font-['Zen_Dots'] transition hover:bg-red-700 hover:text-black mt-4">Protect My Vehicle</button>
+            </div>
+        </section>
+    </div>
+
+    <footer class="w-full h-[40rem] lg:h-[32rem] bg-stone-900 border-t border-1 border-zinc-700 reveal">
+        <div id="con" class="w-full h-[90%] flex flex-col lg:flex-row justify-center items-start gap-10 lg:gap-6 border-b border-1 border-zinc-700 py-16">
+            <div class="w-60 font-['Inter'] hidden lg:flex flex-col justify-start items-start gap-8 text-sm font-light">
+                <h3 class="font-semibold">Our Services</h3>
+                <div class="flex flex-col justify-start items-start gap-3">
+                    <h5 class="cursor-pointer">Ceramic & Graphene Coatings</h5>
+                    <h5 class="cursor-pointer">Paint Protection Films</h5>
+                    <h5 class="cursor-pointer">Body-Shop (Denting & Painting)</h5>
+                    <h5 class="cursor-pointer">Wrap Jobs</h5>
+                    <h5 class="cursor-pointer">Detailing and Interior cleaning</h5>
+                    <h5 class="cursor-pointer">Insurance Claims</h5>
+                    <h5 class="cursor-pointer">Other Services</h5>
+                </div>
+            </div>
+            <div class="w-60 font-['Inter'] hidden lg:flex flex-col justify-start items-start gap-8 text-sm font-light">
+                <h3 class="font-semibold">Other Services</h3>
+                <div class="flex flex-col justify-start items-start gap-3">
+                    <h5 class="cursor-pointer">Under-body anti-rust coatings</h5>
+                    <h5 class="cursor-pointer">Windshield and all glass polishing</h5>
+                    <h5 class="cursor-pointer">Steering, Gear knob and Gear</h5>
+                    <h5 class="cursor-pointer">bellow covers</h5>
+                    <h5 class="cursor-pointer">Headlight and taillight restorations</h5>
+                    <h5 class="cursor-pointer">Body Washing and Vacuuming</h5>
+                    <h5 class="cursor-pointer">Headliners replacement</h5>
+                </div>
+            </div>
+            <div class="w-60 font-['Inter'] hidden lg:flex flex-col justify-start items-start gap-6 text-sm font-light">
+                <h3 class="font-semibold">Visit The Store</h3>
+                <div class="flex flex-col justify-start items-start gap-6">
+                    <div>
+                        <h5 class="leading-8">Plot No. 142, Industrial Auto Zone Near Western Bypass, Sector 58 Newtown, Mumbai - 400076 Maharashtra, India</h5>
+                    </div>
+                    <div>
+                        <img src="../SVG/Map.svg" draggable="false">
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-60 font-['Inter'] flex flex-col justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-6 text-sm font-light px-2">
+                <h3 class="font-semibold">Contact Us</h3>
+                <div class="flex flex-col justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-6">
+                    <h5 class="leading-8 text-center lg:text-left lg:hidden flex">Email: contact@CaliperPlus.in<br>&#40;Please do not send service/work enquiry on this mail. Click service enquiry on top of the page for enquiries&#41;</h5>
+                    <h5 class="leading-8 text-center lg:text-left hidden lg:flex">Email: contact@CaliperPlus.in &#40;Please do not send service/work enquiry on this mail. Click service enquiry on top of the page for enquiries&#41;</h5>
+                    <h5>Phone: +91 87546 45879</h5>
+                </div>
+            </div>
+            <div class="w-full lg:w-60 font-['Inter'] flex lg:hidden flex-col justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-6 text-sm font-light">
+                <h3 class="font-semibold">Visit The Store</h3>
+                <div class="flex flex-col justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-6">
+                    <div>
+                        <h5 class="leading-8 text-center lg:text-left">Plot No. 142, Industrial Auto Zone Near Western Bypass, Sector 58 Newtown, Mumbai - 400076 Maharashtra, India</h5>
+                    </div>
+                    <div>
+                        <img src="../SVG/Map.svg" draggable="false">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Cright" class="w-full h-[10%] flex justify-center items-center border-t border-1 border-zinc-700 font-['Inter'] text-xs">
+            <h5 class="opacity-50 hover:underline cursor-pointer underline-offset-2">&#xA9; 2025 CaliperPlus. All rights reserved.</h5>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../ComAnimation.js" type="module"></script>
+ 
+</body>
+</html>

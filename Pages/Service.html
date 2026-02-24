@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="overflow-x-hidden scrollbar-hide" lang="en">
+    <head>
+        <title>Home Page</title>
+
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/png" href="../SVG/Logo.svg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <style>
+            :root {
+                --white: #FFFFFF;
+                --red: #D80000;
+                --black: #0F0F0F;
+                --font-zendots: "Zen Dots", sans-serif;
+                --font-ubuntu: "Ubuntu", sans-serif;
+                --font-poppins: "Poppins", sans-serif;
+            }
+            /* Hide scrollbar for all browsers */
+            .scrollbar-hide {
+              -ms-overflow-style: none;  /* IE & Edge */
+              scrollbar-width: none;     /* Firefox */
+            }
+
+            .scrollbar-hide::-webkit-scrollbar {
+              display: none;             /* Chrome, Safari */
+            }
+        </style>
+
+    </head>
+    <body id="body" class="w-full h-auto m-0 p-0 scroll-smooth select-none relative bg-black text-white lg:overflow-x-visible">
+
+        <nav class="w-full h-[5.3rem] px-24 hidden lg:flex justify-between items-center bg-black sticky top-0 z-50 shadow-[0px_4px_13.5px_1px_rgba(255,255,255,0.08)]">
+            <a href="../index.html" id="logo" draggable="false" class="w-auto h-auto flex justify-center items-center gap-2 cursor-pointer">
+                <img src="../SVG/Logo.svg" loading="lazy" alt="Logo" draggable="false" class="w-16 h-auto">
+                <div id="L-Text" class="w-auto h-auto flex flex-col justify-center items-center">
+                    <h1 class="font-['Zen_Dots'] text-sm">CaliperPlus</h1>
+                    <h6 class="font-['Ubuntu'] text-[8px] font-medium">YOUR CAR Detailing SHOP</h6>
+                </div>
+            </a>
+            <ul class="w-auto h-auto flex justify-center items-center gap-16 font-['Ubuntu'] text-sm font-medium">
+                <details id="Hover-Details" class="w-auto h-auto relative list-none text-center group  flex justify-center items-center">
+                    <summary class="w-auto h-auto relative list-none flex justify-center items-center gap-1 cursor-pointer">
+                        <h3 class="uppercase font-medium tracking-wider hover:text-red-700">Our Services</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="transition-transform duration-200 group-open:rotate-180" width="12" height="12" viewBox="0 0 16 16"><path fill="#fff" fill-rule="non-zero" d="M13.069 5.157L8.384 9.768a.546.546 0 0 1-.768 0L2.93 5.158a.55.55 0 0 0-.771 0a.53.53 0 0 0 0 .759l4.684 4.61a1.65 1.65 0 0 0 2.312 0l4.684-4.61a.53.53 0 0 0 0-.76a.55.55 0 0 0-.771 0"/></svg>
+                    </summary>
+                    <ul class="w-[12rem] h-auto absolute list-none text-center flex flex-col justify-start items-center gap-4 text-white text-sm font-medium font-['Poppins'] z-50 bg-black mt-10 py-6 -ml-40 shadow-[0px_4px_11.199999809265137px_0px_rgba(255,255,255,0.10)] rounded">
+                        <a href="CG.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Ceramic & Graphene Coatings</a>
+                        <a href="PPF.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Paint Protection Film</a>
+                        <a href="BS.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Body-Shop (Denting & Painting)</a>
+                        <a href="WW.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Wrap Jobs</a>
+                        <a href="DI.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Detailing and Interior cleaning</a>
+                        <a href="IC.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Insurance Claims</a>
+                        <a href="#" draggable="false" class="hover:text-red-700 cursor-pointer transition">Other Services</a>
+                    </ul>
+                </details>
+                <a href="../Pages/Service.html" draggable="false" class="w-auto h-auto uppercase font-medium tracking-wider hover:text-red-700 cursor-pointer transition">Service Enquiry</a>
+            </ul>
+        </nav>
+
+        <nav class="w-full h-auto px-6 py-6 flex lg:hidden justify-between items-center bg-black sticky top-0 z-50 shadow-[0px_4px_13.5px_1px_rgba(255,255,255,0.08)]">
+            <a href="../index.html" id="logo" draggable="false" class="w-auto h-auto flex justify-center items-center gap-1 cursor-pointer">
+                <img src="../SVG/Logo.svg" loading="lazy" alt="Logo" draggable="false" class="w-10 h-auto">
+                <div id="L-Text" class="w-auto h-auto flex flex-col justify-center items-start gap-1">
+                    <h1 class="text-[9.91px] font-normal font-['Zen_Dots'] leading-3">CaliperPlus</h1>
+                    <h6 class="font-['Ubuntu'] text-[4.58px] font-medium uppercase leading-[5.40px] tracking-wide">YOUR CAR Detailing SHOP</h6>
+                </div>
+            </a>
+            <details class="relative group">
+                <summary class="list-none cursor-pointer flex items-center justify-center p-2 rounded-xl">
+                    <img src="../SVG/Hamburgers.svg" loading="lazy" alt="Open services menu" draggable="false">
+                </summary>
+                <div class="absolute top-12 -translate-x-[82.5vw] self-center w-[100vw] bg-black text-white shadow-2xl p-8 flex flex-col justify-center items-center gap-3 animate-[fadeIn_0.5s_ease-in-out]">
+                    <a href="../Pages/Service.html" draggable="false" class="text-base font-medium font-['Ubuntu'] uppercase tracking-widest text-center hover:text-red-700 cursor-pointer transition">Service Enquiry</a>
+                    <div class="w-24 h-px bg-white/40"></div>
+                    <h3 class="text-base font-medium font-['Ubuntu'] uppercase tracking-widest text-center">Our Services</h3>
+                    <ul class="flex flex-col gap-3 text-base font-normal font-['Poppins'] text-center">
+                        <a href="CG.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Ceramic & Graphene Coatings</a>
+                        <a href="PPF.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Paint Protection Films</a>
+                        <a href="BS.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Body-Shop (Denting & Painting)</a>
+                        <a href="WW.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Wrap Jobs</a>
+                        <a href="DI.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Detailing & Interior Cleaning</a>
+                        <a href="IC.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Insurance Claims</a>
+                        <a href="#" draggable="false" class="hover:text-red-700 cursor-pointer transition">Other Services</a>
+                    </ul>
+                </div>
+            </details>
+        </nav>
+
+        <div id="Hero-Section" class="w-full h-auto flex justify-end items-start gap-4 relative px-6 lg:px-0">
+            <div id="C-images" class="w-1/2 hidden lg:block fixed left-0 top-[25px] overflow-hidden" style="height: calc(100vh - 25px); max-width: calc(50vw - 12px);">
+                <img id="ChangeImage" src="../Images/OS-Side-BG-1.png" loading="lazy" draggable="false" class="w-full h-full object-cover object-center z-0 transition-all duration-700 ease-in-out opacity-100 scale-100">
+            </div>
+            <div class="w-36 h-full absolute bg-gradient-to-l from-black to-transparent left-[calc(40vw-0px)] self-start"></div>
+            <div id="Form" class="w-full lg:w-1/2 h-auto flex flex-col justify-center items-center lg:pr-24 gap-6 my-10 relative">
+                <div id="Page-address" class="w-full h-auto font-['Poppins'] flex items-center justify-start gap-2 text-sm font-medium">
+                    <a href="../index.html" draggable="false" class="cursor-pointer hover:text-red-700">HOME</a>
+                    <h5 class="text-base">&gt;&gt;</h5>
+                    <h5 class="cursor-pointer hover:text-red-700">Service Enquiry</h5>
+                </div>
+                <h3 class="text-[12px] lg:text-sm font-medium font-['Poppins'] uppercase leading-6 text-center lg:text-left">WELCOME TO CALIPERPULS – INDIA’S PREMIER BODYSHOP & DETAILING CENTRE. GET A QUICK ESTIMATE FOR YOUR CAR BY FILLING OUT THE FORM BELOW.</h3>
+                <form action="" id="ServiceForm" class="w-full flex flex-col justify-center items-start gap-4 text-sm font-medium font-['Poppins'] uppercase leading-4 tracking-wide">
+                    <div id="name" class="w-full flex flex-col justify-center items-start gap-2">
+                        <h3 class="">NAME<span class="text-red-700">*</span></h3>
+                        <input type="text" name="name" id="Fname" required pattern="^[A-Za-z. ]+$" placeholder="" class="w-full bg-transparent border-[1px] border-white text-white p-2 rounded-sm [&:focus:invalid:not(:placeholder-shown)]:border-red-700 outline-none focus:outline-none focus:ring-0">
+                    </div>
+                    <div id="email" class="w-full flex flex-col justify-center items-start gap-2">
+                        <h3 class="">Email<span class="text-red-700">*</span></h3>
+                        <input type="email" name="email" id="Email" required pattern="^[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="" class="w-full bg-transparent border-[1px] border-white text-white p-2 rounded-sm [&:focus:invalid:not(:placeholder-shown)]:border-red-700 outline-none focus:outline-none focus:ring-0 ">
+                    </div>
+                    <div id="phone" class="w-full flex flex-col justify-center items-start gap-2">
+                        <h3 class="">Phone<span class="text-red-700">*</span></h3>
+                        <input type="tel" name="phone" id="Phone" maxlength="10" required pattern="[0-9]{10}" placeholder="" class="w-full bg-transparent border-[1px] border-white text-white p-2 rounded-sm [&:focus:invalid:not(:placeholder-shown)]:border-red-700 outline-none focus:outline-none focus:ring-0">
+                    </div>
+                    <div id="state" class="w-full flex flex-col justify-center items-start gap-2">
+                        <h3 class="">State/UT:<span class="text-red-700">*</span></h3>
+                        <input type="text" name="state" id="State" required pattern="^[A-Za-z\s]+$"  placeholder="" class="w-full bg-transparent border-[1px] border-white text-white p-2 rounded-sm [&:focus:invalid:not(:placeholder-shown)]:border-red-700 outline-none focus:outline-none focus:ring-0">
+                    </div>
+                    <div id="city" class="w-full flex flex-col justify-center items-start gap-2">
+                        <h3 class="">City<span class="text-red-700">*</span></h3>
+                        <input type="text" name="city" id="City" required pattern="^[A-Za-z\s]+$" placeholder="" class="w-full bg-transparent border-[1px] border-white text-white p-2 rounded-sm [&:focus:invalid:not(:placeholder-shown)]:border-red-700 outline-none focus:outline-none focus:ring-0">
+                    </div>
+                    <div id="pinCode" class="w-full flex flex-col justify-center items-start gap-2">
+                        <h3 class="">Pin Code<span class="text-red-700">*</span></h3>
+                        <input type="text" name="pinCode" id="PinCode" maxlength="6" required pattern="[0-9]{6}" placeholder="" class="w-full bg-transparent border-[1px] border-white text-white p-2 rounded-sm [&:focus:invalid:not(:placeholder-shown)]:border-red-700 outline-none focus:outline-none focus:ring-0">
+                    </div>
+                    <div id="vrn" class="w-full flex flex-col justify-center items-start gap-2">
+                        <h3 class="">Vehicle Registration Number<span class="text-red-700">*</span></h3>
+                        <input type="text" name="VRN" id="VRN" maxlength="10" required pattern=".{10}" placeholder="" class="w-full bg-transparent border-[1px] border-white text-white p-2 rounded-sm [&:focus:invalid:not(:placeholder-shown)]:border-red-700 outline-none focus:outline-none focus:ring-0">
+                    </div>
+                    <div id="carMake" class="w-full flex flex-col justify-center items-start gap-2">
+                        <h3 class="">Car Make<span class="text-red-700">*</span></h3>
+                        <input type="text" name="carMake" id="CarMake" required placeholder="" class="w-full bg-transparent border-[1px] border-white text-white p-2 rounded-sm [&:user-invalid]:border-red-700 outline-none focus:outline-none focus:ring-0">
+                    </div>
+                    <div id="carModel" class="w-full flex flex-col justify-center items-start gap-2">
+                        <h3 class="">Car Model Name<span class="text-red-700">*</span></h3>
+                        <input type="text" name="carModel" id="CarModel" required placeholder="" class="w-full bg-transparent border-[1px] border-white text-white p-2 rounded-sm [&:user-invalid]:border-red-700 outline-none focus:outline-none focus:ring-0">
+                    </div>
+                    <div id="serviceRequired" class="w-full flex flex-col justify-center items-start gap-2">
+                        <h3 class="">Services Required<span class="text-red-700">*</span></h3>
+                        <input type="text" name="serviceRequired" id="ServiceRequired" required placeholder="" class="w-full h-10 bg-transparent border-[1px] border-white text-white p-2 rounded-sm [&:user-invalid]:border-red-700 outline-none focus:outline-none focus:ring-0">
+                    </div>
+                    <div id="comments" class="w-full flex flex-col justify-center items-start gap-2">
+                        <h3 class="">Comments<span class="text-red-700">*</span></h3>
+                        <textarea type="text" name="comment" id="Comments" required class="resize-none w-full h-24 bg-transparent border-[1px] border-white text-white p-2 rounded-sm"></textarea>
+                    </div>
+                    <button type="submit" id="SubmitButton" class="w-40 h-10 mt-4 self-center lg:self-start relative rounded-tl-[5px] rounded-br-[5px] rounded-tr-[30px] rounded-bl-[30px] outline outline-[3px] outline-offset-[-3px] outline-red-700 overflow-hidden text-red-700 text-xs font-normal font-['Zen_Dots'] transition hover:bg-red-700 hover:text-black">SUBMIT</button>
+                </form>
+                <h3 id="note1" class="w-auto h-auto text-sm font-normal font-['Poppins'] uppercase leading-4 tracking-wide inline hidden gap-4 lg:gap-2 text-center lg:text-left "><span class="text-red-700">NOTE: </span> OUR TEAM WILL RESPOND TO YOUR ENQUIRY VIA THE EMAIL ID YOU PROVIDED. RESPONSES MAY TAKE 24 TO 48 HOURS. BE SURE TO CHECK YOUR SPAM FOLDER IF YOU DON’T SEE OUR EMAIL.</h3>
+            </div>
+        </div>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script type="module" src="Service.js"></script>
+        <script src="../ComAnimation.js" type="module"></script>
+
+
+    </body>
+</html>

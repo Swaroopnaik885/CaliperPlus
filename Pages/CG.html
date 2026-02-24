@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="overflow-x-hidden scrollbar-hide" lang="en">
+<head>
+    <title>Home Page</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="../SVG/Logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <style>
+            :root {
+                --white: #FFFFFF;
+                --red: #D80000;
+                --black: #0F0F0F;
+                --font-zendots: "Zen Dots", sans-serif;
+                --font-ubuntu: "Ubuntu", sans-serif;
+                --font-poppins: "Poppins", sans-serif;
+            }
+            .scrollbar-hide {
+              -ms-overflow-style: none;
+              scrollbar-width: none;
+            }
+
+            .scrollbar-hide::-webkit-scrollbar {
+              display: none;
+            }
+        </style>
+        
+</head>
+<body id="body" class="w-full h-auto m-0 p-0 scroll-smooth select-none relative bg-black text-white lg:overflow-x-visible">
+
+    <nav class="w-full h-[5.3rem] px-24 hidden lg:flex justify-between items-center bg-black sticky top-0 z-50 shadow-[0px_4px_13.5px_1px_rgba(255,255,255,0.08)]">
+        <a href="../index.html" id="logo" draggable="false" class="w-auto h-auto flex justify-center items-center gap-2 cursor-pointer">
+            <img src="../SVG/Logo.svg" alt="Logo" loading="lazy" draggable="false" class="w-16 h-auto">
+            <div id="L-Text" class="w-auto h-auto flex flex-col justify-center items-center">
+                <h1 class="font-['Zen_Dots'] text-sm">CaliperPlus</h1>
+                <h6 class="font-['Ubuntu'] text-[8px] font-medium">YOUR CAR Detailing SHOP</h6>
+            </div>
+        </a>
+        <ul class="w-auto h-auto flex justify-center items-center gap-16 font-['Ubuntu'] text-sm font-medium">
+            <details id="Hover-Details" class="w-auto h-auto relative list-none text-center group  flex justify-center items-center">
+                <summary class="w-auto h-auto relative list-none flex justify-center items-center gap-1 cursor-pointer">
+                    <h3 class="uppercase font-medium tracking-wider text-white hover:text-red-700">Our Services</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="transition-transform duration-200 group-open:rotate-180" width="12" height="12" viewBox="0 0 16 16"><path fill="#fff" fill-rule="non-zero" d="M13.069 5.157L8.384 9.768a.546.546 0 0 1-.768 0L2.93 5.158a.55.55 0 0 0-.771 0a.53.53 0 0 0 0 .759l4.684 4.61a1.65 1.65 0 0 0 2.312 0l4.684-4.61a.53.53 0 0 0 0-.76a.55.55 0 0 0-.771 0"/></svg>
+                </summary>
+                <ul class="w-[12rem] h-auto absolute list-none text-center flex flex-col justify-start items-center gap-4 text-white text-sm font-medium font-['Poppins'] z-50 bg-black mt-10 py-6 -ml-40 shadow-[0px_4px_11.199999809265137px_0px_rgba(255,255,255,0.1)] rounded">
+                    <a href="CG.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Ceramic & Graphene Coatings</a>
+                    <a href="PPF.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Paint Protection Film</a>
+                    <a href="BS.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Body-Shop (Denting & Painting)</a>
+                    <a href="WW.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Wrap Jobs</a>
+                    <a href="DI.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Detailing and Interior cleaning</a>
+                    <a href="IC.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Insurance Claims</a>
+                    <a href="#" draggable="false" class="hover:text-red-700 cursor-pointer transition">Other Services</a>
+                </ul>
+            </details>
+            <a href="../Pages/Service.html" draggable="false" class="w-auto h-auto uppercase font-medium tracking-wider hover:text-red-700 cursor-pointer transition">Service Enquiry</a>
+        </ul>
+    </nav>
+
+    <nav class="w-full h-auto px-6 py-6 flex lg:hidden justify-between items-center bg-black sticky top-0 z-50 shadow-[0px_4px_13.5px_1px_rgba(255,255,255,0.08)]">
+        <a href="../index.html" id="logo" draggable="false" class="w-auto h-auto flex justify-center items-center gap-1 cursor-pointer">
+            <img src="../SVG/Logo.svg" alt="Logo" loading="lazy" draggable="false" class="w-10 h-auto">
+            <div id="L-Text" class="w-auto h-auto flex flex-col justify-center items-start gap-1">
+                <h1 class="text-[9.91px] font-normal font-['Zen_Dots'] leading-3">CaliperPlus</h1>
+                <h6 class="font-['Ubuntu'] text-[4.58px] font-medium uppercase leading-[5.40px] tracking-wide">YOUR CAR Detailing SHOP</h6>
+            </div>
+        </a>
+        <details class="relative group">
+            <summary class="list-none cursor-pointer flex items-center justify-center p-2 rounded-xl">
+                <img src="../SVG/Hamburgers.svg" alt="Open services menu" loading="lazy" draggable="false">
+            </summary>
+            <div class="absolute top-12 -translate-x-[82.5vw] self-center w-[100vw] bg-black text-white shadow-2xl p-8 flex flex-col justify-center items-center gap-3 animate-[fadeIn_0.5s_ease-in-out]">
+                <a href="../Pages/Service.html" draggable="false" class="text-base font-medium font-['Ubuntu'] uppercase tracking-widest text-center hover:text-red-700 cursor-pointer transition">Service Enquiry</a>
+                <div class="w-24 h-px bg-white/40"></div>
+                <h3 class="text-base font-medium font-['Ubuntu'] uppercase tracking-widest text-center">Our Services</h3>
+                <ul class="flex flex-col gap-3 text-base font-normal font-['Poppins'] text-center">
+                    <a href="CG.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Ceramic & Graphene Coatings</a>
+                    <a href="PPF.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Paint Protection Films</a>
+                    <a href="BS.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Body-Shop (Denting & Painting)</a>
+                    <a href="WW.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Wrap Jobs</a>
+                    <a href="DI.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Detailing & Interior Cleaning</a>
+                    <a href="IC.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Insurance Claims</a>
+                    <a href="#" draggable="false" class="hover:text-red-700 cursor-pointer transition">Other Services</a>
+                </ul>
+            </div>
+        </details>
+    </nav>
+
+    <div id="Hero-Section" class="w-full h-auto flex flex-col justify-start items-center gap-14 px-6 lg:px-0 pb-10">
+        <div id="Page-address" class="w-full h-[4rem] font-['Poppins'] flex items-center justify-start gap-2 text-sm font-medium lg:px-24">
+            <a href="../index.html" draggable="false" class="cursor-pointer hover:text-red-700">HOME</a>
+            <h5 class="text-base">&gt;&gt;</h5>
+            <h5 class="cursor-pointer hover:text-red-700">Ceramic & Graphene Coatings</h5>
+        </div>
+        <h1 class="text-lg lg:text-4xl text-center tracking-widest font-normal font-['Zen_Dots']">Ceramic & Graphene Coatings</h1>
+        <section class="w-full lg:w-[90%] h-auto bg-black flex flex-col lg:flex-row overflow-hidden gap-6 px-2 lg:px-6">
+            <img src="../Images/CG-H-1.png" loading="lazy" draggable="false" class="w-86 lg:w-2/5 rounded-[1.5rem]" />
+            <div class="flex flex-col justify-center items-center gap-4 text-center lg:w-3/5 h-auto">
+                <h3 class="text-xl font-['Zen_Dots'] tracking-widest capitalize">Ceramic Coating</h3>
+                <p class="text-xs lg:text-base lg:font-medium -mt-4 lg:mt-0 tracking-widest">Gloss. Protection. Durability.</p>
+                <p class="text-sm hidden lg:block text-center leading-6 tracking-widest">Ceramic coating is a liquid polymer infused with Silicon Dioxide <br> (SiO₂) that bonds chemically with the surface to form a hard, <br> transparent layer. It is not wax or polish — it becomes a <br> semi-permanent protective shield.</p>
+                <p class="text-xs block lg:hidden text-center leading-4 tracking-widest">Ceramic coating is a liquid polymer infused with Silicon Dioxide (SiO₂) that bonds chemically with the surface to form a hard, transparent layer. It is not wax or polish — it becomes a semi-permanent protective shield.</p>
+                <p class="text-xs lg:text-sm text-center leading-4 lg:leading-6 tracking-widest"> Hydrophobic Effect – Water beads and slides off easily <br> UV Protection – Prevents fading and oxidation <br> Chemical Resistance – Guards against bird droppings, acid rain, and stains <br> Enhanced Shine – Deep mirror-like gloss finish <br> Light Scratch Resistance – Reduces swirl marks and micro-scratches</p>
+                <button id="SP1" class="w-64 lg:w-64 h-12 lg:h-12 relative rounded-tl-[5px] lg:rounded-tl-[5px] rounded-br-[5px] lg:rounded-br-[5px] rounded-tr-[16px] lg:rounded-tr-[30px] rounded-bl-[16px] lg:rounded-bl-[30px] outline outline-[3px] outline-offset-[-3px] outline-red-700 overflow-hidden text-red-700 text-sm lg:text-xs font-normal font-['Zen_Dots'] transition hover:bg-red-700 hover:text-black">Protect My Vehicle</button>
+            </div>
+        </section>
+        <section class="w-full lg:w-[90%] h-auto bg-black flex flex-col lg:flex-row overflow-hidden gap-6 px-2 lg:px-6  reveal">
+            <img src="../Images/CG-H-2.png" loading="lazy" draggable="false" class="w-86 lg:w-2/5 flex lg:hidden rounded-[1.5rem]" />
+            <div class="flex flex-col justify-center items-center gap-4 text-center lg:w-3/5 h-auto">
+                <h3 class="text-xl font-['Zen_Dots'] tracking-widest capitalize">Graphene Coating</h3>
+                <p class="text-xs lg:text-base font-medium -mt-4 lg:mt-0 tracking-widest">Next-Generation Protection. Stronger. Smarter. Longer-Lasting.</p>
+                <p class="text-sm hidden lg:block text-center leading-6 tracking-widest">Graphene coating is an advanced upgrade of ceramic coating <br> infused with Graphene nanoparticles — one of the strongest <br> materials known. It delivers superior durability, heat resistance, <br> and anti-static performance.</p>
+                <p class="text-xs block lg:hidden text-center leading-4 tracking-widest">Graphene coating is an advanced upgrade of ceramic coating infused with Graphene nanoparticles — one of the strongest materials known. It delivers superior durability, heat resistance, and anti-static performance.</p>
+                <p class="text-xs lg:text-sm text-center leading-4 lg:leading-6 tracking-widest">Superior Strength – Enhanced molecular structure <br> Anti-Static Surface – Repels dust and dirt buildup <br> High Heat Resistance – Reduces water spotting in hot climates <br> Extreme Hydrophobicity – Faster water beading and runoff <br> Longer Lifespan – Better performance in harsh conditions</p>
+                <button id="SP2" class="w-64 lg:w-64 h-12 lg:h-12 relative rounded-tl-[5px] lg:rounded-tl-[5px] rounded-br-[5px] lg:rounded-br-[5px] rounded-tr-[16px] lg:rounded-tr-[30px] rounded-bl-[16px] lg:rounded-bl-[30px] outline outline-[3px] outline-offset-[-3px] outline-red-700 overflow-hidden text-red-700 text-sm lg:text-xs font-normal font-['Zen_Dots'] transition hover:bg-red-700 hover:text-black">Protect My Vehicle</button>
+            </div>
+            <img src="../Images/CG-H-2.png" loading="lazy" draggable="false" class="w-2/5 hidden lg:flex rounded-[1.5rem]" />
+        </section>
+    </div>
+
+    <div id="Comapare" class="w-full h-auto flex flex-col justify-start items-center gap-6 lg:py-10 px-6 lg:px-0 reveal">
+        <section class="text-center">
+            <h2 class="text-xl lg:text-4xl font-['Zen_Dots'] lg:tracking-[0.3rem] lg:leading-[3.375rem]">Ceramic vs Graphene — Quick Comparison</h2>
+        </section>
+        <section class="hidden lg:flex justify-center gap-[6rem] text-center">
+            <div>
+              <h4 class="font-bold mb-4">Feature</h4>
+              <p>Shine</p>
+              <p class="mt-4">Durability</p>
+              <p class="mt-4">Heat Resistance</p>
+              <p class="mt-4">Dust Repellence</p>
+              <p class="mt-4">Lifespan</p>
+              <p class="mt-4">Cost</p>
+            </div>
+            <div>
+              <h4 class="font-bold mb-4">Ceramic</h4>
+              <p>High Gloss</p>
+              <p class="mt-4">Strong</p>
+              <p class="mt-4">Good</p>
+              <p class="mt-4">Moderate</p>
+              <p class="mt-4">1–5 Years</p>
+              <p class="mt-4">Moderate</p>
+            </div>
+            <div>
+              <h4 class="font-bold mb-4">Graphene</h4>
+              <p>Deep, Rich Gloss</p>
+              <p class="mt-4">Very Strong</p>
+              <p class="mt-4">Excellent</p>
+              <p class="mt-4">High (Anti-Static)</p>
+              <p class="mt-4">3–7 Years</p>
+              <p class="mt-4">Premium</p>
+            </div>
+        </section>
+        <section class="flex lg:hidden justify-between gap-10 text-center">
+            <div class="flex flex-col gap-8">
+              <h4 class="font-bold">Feature</h4>
+              <p>Shine</p>
+              <p class="">Durability</p>
+              <p class="">Heat Resistance</p>
+              <p class="">Dust Repellence</p>
+              <p class="">Lifespan</p>
+              <p class="">Cost</p>
+            </div>
+            <div class="flex flex-col gap-8">
+              <h4 class="font-bold">Ceramic</h4>
+              <p>High Gloss</p>
+              <p class="">Strong</p>
+              <p class="">Good</p>
+              <p class="">Moderate</p>
+              <p class="">1–5 Years</p>
+              <p class="">Moderate</p>
+            </div>
+        </section>
+    </div>
+
+    <div id="YouTube-section" class="w-full h-auto flex flex-col justify-start items-center gap-10 py-10 lg:py-20 px-6 lg:px-0 reveal">
+        <h2 class="lg:w-[80%] text-center text-lg lg:text-3xl font-['Zen_Dots'] lg:leading-[3rem]">Take a quick look at how we transform and protect your vehicle.</h2>
+        <div id="youtube-review" class="flex gap-10 flex-wrap justify-center items-center">
+            <div id="review" class="w-80 lg:w-96 h-56 lg:h-60 flex justify-center items-center bg-white rounded-[1rem]">
+                <img src="../SVG/Youtube-red.svg" loading="lazy" draggable="false" class="w-16 h-auto">
+            </div>
+            <div id="review" class="w-80 lg:w-96 h-56 lg:h-60 flex justify-center items-center bg-white rounded-[1rem]">
+                <img src="../SVG/Youtube-red.svg" loading="lazy" draggable="false" class="w-16 h-auto">
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="w-full h-[40rem] lg:h-[32rem] bg-stone-900 border-t border-1 border-zinc-700  reveal">
+        <div id="con" class="w-full h-[90%] flex flex-col lg:flex-row justify-center items-start gap-10 lg:gap-6 border-b border-1 border-zinc-700 py-16">
+            <div class="w-60 font-['Inter'] hidden lg:flex flex-col justify-start items-start gap-8 text-sm font-light">
+                <h3 class="font-semibold">Our Services</h3>
+                <div class="flex flex-col justify-start items-start gap-3">
+                    <h5 class="cursor-pointer">Ceramic & Graphene Coatings</h5>
+                    <h5 class="cursor-pointer">Paint Protection Films</h5>
+                    <h5 class="cursor-pointer">Body-Shop (Denting & Painting)</h5>
+                    <h5 class="cursor-pointer">Wrap Jobs</h5>
+                    <h5 class="cursor-pointer">Detailing and Interior cleaning</h5>
+                    <h5 class="cursor-pointer">Insurance Claims</h5>
+                    <h5 class="cursor-pointer">Other Services</h5>
+                </div>
+            </div>
+            <div class="w-60 font-['Inter'] hidden lg:flex flex-col justify-start items-start gap-8 text-sm font-light">
+                <h3 class="font-semibold">Other Services</h3>
+                <div class="flex flex-col justify-start items-start gap-3">
+                    <h5 class="cursor-pointer">Under-body anti-rust coatings</h5>
+                    <h5 class="cursor-pointer">Windshield and all glass polishing</h5>
+                    <h5 class="cursor-pointer">Steering, Gear knob and Gear</h5>
+                    <h5 class="cursor-pointer">bellow covers</h5>
+                    <h5 class="cursor-pointer">Headlight and taillight restorations</h5>
+                    <h5 class="cursor-pointer">Body Washing and Vacuuming</h5>
+                    <h5 class="cursor-pointer">Headliners replacement</h5>
+                </div>
+            </div>
+            <div class="w-60 font-['Inter'] hidden lg:flex flex-col justify-start items-start gap-6 text-sm font-light">
+                <h3 class="font-semibold">Visit The Store</h3>
+                <div class="flex flex-col justify-start items-start gap-6">
+                    <div>
+                        <h5 class="leading-8">Plot No. 142, Industrial Auto Zone Near Western Bypass, Sector 58 Newtown, Mumbai - 400076 Maharashtra, India</h5>
+                    </div>
+                    <div>
+                        <img src="../SVG/Map.svg" loading="lazy" draggable="false">
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-60 font-['Inter'] flex flex-col justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-6 text-sm font-light px-2">
+                <h3 class="font-semibold">Contact Us</h3>
+                <div class="flex flex-col justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-6">
+                    <h5 class="leading-8 text-center lg:text-left lg:hidden flex">Email: contact@CaliperPlus.in<br>&#40;Please do not send service/work enquiry on this mail. Click service enquiry on top of the page for enquiries&#41;</h5>
+                    <h5 class="leading-8 text-center lg:text-left hidden lg:flex">Email: contact@CaliperPlus.in &#40;Please do not send service/work enquiry on this mail. Click service enquiry on top of the page for enquiries&#41;</h5>
+                    <h5>Phone: +91 87546 45879</h5>
+                </div>
+            </div>
+            <div class="w-full lg:w-60 font-['Inter'] flex lg:hidden flex-col justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-6 text-sm font-light">
+                <h3 class="font-semibold">Visit The Store</h3>
+                <div class="flex flex-col justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-6">
+                    <div>
+                        <h5 class="leading-8 text-center lg:text-left">Plot No. 142, Industrial Auto Zone Near Western Bypass, Sector 58 Newtown, Mumbai - 400076 Maharashtra, India</h5>
+                    </div>
+                    <div>
+                        <img src="../SVG/Map.svg" loading="lazy" draggable="false">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Cright" class="w-full h-[10%] flex justify-center items-center border-t border-1 border-zinc-700 font-['Inter'] text-xs">
+            <h5 class="opacity-50 hover:underline cursor-pointer underline-offset-2">&#xA9; 2025 CaliperPlus. All rights reserved.</h5>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../ComAnimation.js" type="module"></script>
+ 
+</body>
+</html>

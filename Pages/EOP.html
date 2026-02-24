@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="overflow-x-hidden scrollbar-hide" lang="en">
+    <head>
+        <title>Home Page</title>
+
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/png" href="../SVG/Logo.svg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <style>
+            :root {
+                --white: #FFFFFF;
+                --red: #D80000;
+                --black: #0F0F0F;
+                --font-zendots: "Zen Dots", sans-serif;
+                --font-ubuntu: "Ubuntu", sans-serif;
+                --font-poppins: "Poppins", sans-serif;
+            }
+            .scrollbar-hide {
+              -ms-overflow-style: none;
+              scrollbar-width: none;
+            }
+
+            .scrollbar-hide::-webkit-scrollbar {
+              display: none;
+            }
+        </style>
+
+    </head>
+    <body id="body" class="w-full h-auto m-0 p-0 scroll-smooth select-none relative bg-black text-white lg:overflow-x-visible">
+
+        <nav class="w-full h-[5.3rem] px-24 hidden lg:flex justify-between items-center bg-black sticky top-0 z-50 shadow-[0px_4px_13.5px_1px_rgba(255,255,255,0.08)]">
+            <a href="../index.html" id="logo" draggable="false" class="w-auto h-auto flex justify-center items-center gap-2 cursor-pointer">
+                <img src="../SVG/Logo.svg" loading="lazy" alt="Logo" draggable="false" class="w-16 h-auto">
+                <div id="L-Text" class="w-auto h-auto flex flex-col justify-center items-center">
+                    <h1 class="font-['Zen_Dots'] text-sm">CaliperPlus</h1>
+                    <h6 class="font-['Ubuntu'] text-[8px] font-medium">YOUR CAR Detailing SHOP</h6>
+                </div>
+            </a>
+            <ul class="w-auto h-auto flex justify-center items-center gap-16 font-['Ubuntu'] text-sm font-medium">
+                <details id="Hover-Details" class="w-auto h-auto relative list-none text-center group  flex justify-center items-center">
+                    <summary class="w-auto h-auto relative list-none flex justify-center items-center gap-1 cursor-pointer">
+                        <h3 class="uppercase font-medium tracking-wider hover:text-red-700">Our Services</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="transition-transform duration-200 group-open:rotate-180" width="12" height="12" viewBox="0 0 16 16"><path fill="#fff" fill-rule="non-zero" d="M13.069 5.157L8.384 9.768a.546.546 0 0 1-.768 0L2.93 5.158a.55.55 0 0 0-.771 0a.53.53 0 0 0 0 .759l4.684 4.61a1.65 1.65 0 0 0 2.312 0l4.684-4.61a.53.53 0 0 0 0-.76a.55.55 0 0 0-.771 0"/></svg>
+                    </summary>
+                    <ul class="w-[12rem] h-auto absolute list-none text-center flex flex-col justify-start items-center gap-4 text-white text-sm font-medium font-['Poppins'] z-50 bg-black mt-10 py-6 -ml-40 shadow-[0px_4px_11.199999809265137px_0px_rgba(255,255,255,0.10)] rounded">
+                        <a href="CG.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Ceramic & Graphene Coatings</a>
+                        <a href="PPF.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Paint Protection Film</a>
+                        <a href="BS.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Body-Shop (Denting & Painting)</a>
+                        <a href="WW.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Wrap Jobs</a>
+                        <a href="DI.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Detailing and Interior cleaning</a>
+                        <a href="IC.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Insurance Claims</a>
+                        <a href="#" draggable="false" class="hover:text-red-700 cursor-pointer transition">Other Services</a>
+                    </ul>
+                </details>
+                <a href="../Pages/Service.html" draggable="false" class="w-auto h-auto uppercase font-medium tracking-wider hover:text-red-700 cursor-pointer transition">Service Enquiry</a>
+            </ul>
+        </nav>
+
+        <nav class="w-full h-auto px-6 py-6 flex lg:hidden justify-between items-center bg-black sticky top-0 z-50 shadow-[0px_4px_13.5px_1px_rgba(255,255,255,0.08)]">
+            <a href="../index.html" id="logo" draggable="false" class="w-auto h-auto flex justify-center items-center gap-1 cursor-pointer">
+                <img src="../SVG/Logo.svg" loading="lazy" alt="Logo" draggable="false" class="w-10 h-auto">
+                <div id="L-Text" class="w-auto h-auto flex flex-col justify-center items-start gap-1">
+                    <h1 class="text-[9.91px] font-normal font-['Zen_Dots'] leading-3">CaliperPlus</h1>
+                    <h6 class="font-['Ubuntu'] text-[4.58px] font-medium uppercase leading-[5.40px] tracking-wide">YOUR CAR Detailing SHOP</h6>
+                </div>
+            </a>
+            <details class="relative group">
+                <summary class="list-none cursor-pointer flex items-center justify-center p-2 rounded-xl">
+                    <img src="../SVG/Hamburgers.svg" loading="lazy" alt="Open services menu" draggable="false">
+                </summary>
+                <div class="absolute top-12 -translate-x-[82.5vw] self-center w-[100vw] bg-black text-white shadow-2xl p-8 flex flex-col justify-center items-center gap-3 animate-[fadeIn_0.5s_ease-in-out]">
+                    <a href="../Pages/Service.html" draggable="false" class="text-base font-medium font-['Ubuntu'] uppercase tracking-widest text-center">Service Enquiry</a>
+                    <div class="w-24 h-px bg-white/40"></div>
+                    <h3 class="text-base font-medium font-['Ubuntu'] uppercase tracking-widest text-center hover:text-red-700 cursor-pointer transition">Our Services</h3>
+                    <ul class="flex flex-col gap-3 text-base font-normal font-['Poppins'] text-center">
+                        <a href="CG.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Ceramic & Graphene Coatings</a>
+                        <a href="PPF.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Paint Protection Films</a>
+                        <a href="BS.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Body-Shop (Denting & Painting)</a>
+                        <a href="WW.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Wrap Jobs</a>
+                        <a href="DI.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Detailing & Interior Cleaning</a>
+                        <a href="IC.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Insurance Claims</a>
+                        <a href="#" draggable="false" class="hover:text-red-700 cursor-pointer transition">Other Services</a>
+                    </ul>
+                </div>
+            </details>
+        </nav>
+
+        <div id="Hero-Section" class="w-full h-auto lg:h-[54rem] flex flex-col px-6 lg:px-0">
+            <div id="Page-address" class="w-full h-[4rem] font-['Poppins'] flex items-center justify-start gap-2 text-sm font-medium lg:px-24">
+                <a href="../index.html" draggable="false" class="cursor-pointer hover:text-red-700">HOME</a>
+                <h5 class="text-base">&gt;&gt;</h5>
+                <h5 class="cursor-pointer hover:text-red-700">Explore Our Packages</h5>
+            </div>
+            <div id="EOP" class="w-full h-auto lg:h-[50rem] flex flex-col justify-center items-center gap-14 lg:px-24">
+                <div id="text" class="flex flex-col justify-center items-center lg:gap-3">
+                    <h1 class="text-lg lg:text-4xl font-normal font-['Zen_Dots']">Explore Our Packages</h1>
+                    <h5 class="text-[10px] lg:text-sm font-normal font-['Poppins']">Tailored Car Detailing Solutions to Fit Every Need and Budget.</h5>
+                </div>
+                <div id="Packages" class="w-full h-auto flex flex-col lg:flex-row justify-center items-center gap-4">
+                    <div id="pack1" class="w-80 lg:w-96 h-auto rounded-[20px] outline outline-1 outline-offset-[-1px] outline-white flex flex-col justify-center items-center py-6 lg:py-8 px-8 gap-4">
+                        <div class="text-xl font-normal font-['Zen_Dots'] flex justify-center items-center gap-6 lg:gap-10 lg:px-4">
+                            <img src="../SVG/EOP-P1.svg" loading="lazy" draggable="false" alt="">
+                            <h2>Basic Shine Package</h2>
+                        </div>
+                        <h4 class="text-sm font-light font-['Poppins']">Perfect for routine maintenance</h4>
+                        <ul class="text-sm font-normal font-['Poppins'] text-left leading-10 flex flex-col justify-start items-start lg:gap-1 list-disc px-6 lg:px-10">
+                            <li>Exterior hand wash & dry</li>
+                            <li>Tire and rim cleaning</li>
+                            <li>Light interior vacuum</li>
+                            <li>Streak-free window cleaning</li>
+                            <li>Air freshener spray</li>
+                        </ul>
+                        <div class="text-sm lg:text-base font-light font-['Poppins'] text-center mt-4">
+                            <h3>Duration: ~45 mins</h3>
+                            <h3>Ideal for: Weekly or bi-weekly maintenance</h3>
+                        </div>
+                        <button class="w-40 h-10 relative rounded-tl-[5px] rounded-br-[5px] rounded-tr-[30px] rounded-bl-[30px] outline outline-[3px] outline-offset-[-3px] outline-red-700 overflow-hidden text-red-700 text-xs font-normal font-['Zen_Dots'] transition hover:bg-red-700 hover:text-black">₹999*</button>
+                    </div>
+                    <div id="pack2" class="w-80 lg:w-96 h-auto rounded-[20px] outline outline-1 outline-offset-[-1px] outline-white flex flex-col justify-center items-center py-6 lg:py-8 px-8 gap-4">
+                        <div class="text-xl font-normal font-['Zen_Dots'] flex justify-center items-center gap-6 lg:gap-10 lg:px-2">
+                            <img src="../SVG/EOP-P2.svg" loading="lazy" draggable="false" alt="">
+                            <h2>Premium Detail Package</h2>
+                        </div>
+                        <h4 class="text-sm font-light font-['Poppins']">Deep clean for a showroom finish</h4>
+                        <ul class="text-sm font-normal font-['Poppins'] text-left leading-10 flex flex-col justify-start items-start lg:gap-1 list-disc px-6 lg:px-10">
+                            <li>Clay bar treatment</li>
+                            <li class="leading-6">Interior shampoo & leather conditioning</li>
+                            <li>Dashboard & trim polish</li>
+                            <li>Engine bay wipe-down</li>
+                            <li>Spray wax protection</li>
+                        </ul>
+                        <div class="text-sm lg:text-base font-light font-['Poppins'] text-center mt-4">
+                            <h3>Duration: 3 hours</h3>
+                            <h3>Ideal for: Monthly upkeep and deep refresh</h3>
+                        </div>
+                        <button class="w-40 h-10 relative rounded-tl-[5px] rounded-br-[5px] rounded-tr-[30px] rounded-bl-[30px] outline outline-[3px] outline-offset-[-3px] outline-red-700 overflow-hidden text-red-700 text-xs font-normal font-['Zen_Dots'] transition hover:bg-red-700 hover:text-black">2,499*</button>
+                    </div>
+                    <div id="pack3" class="w-80 lg:w-96 h-auto rounded-[20px] outline outline-1 outline-offset-[-1px] outline-white flex flex-col justify-center items-center py-6 lg:py-8 px-8 gap-4">
+                        <div class="text-xl font-normal font-['Zen_Dots'] flex justify-center items-center gap-6 lg:gap-10 lg:px-2">
+                            <img src="../SVG/EOP-P3.svg" loading="lazy" draggable="false" alt="">
+                            <h2>Ultimate Detail Package</h2>
+                        </div>
+                        <h4 class="text-sm font-light font-['Poppins']">Best for long-lasting shine and protection</h4>
+                        <ul class="text-sm font-normal font-['Poppins'] text-left leading-10 flex flex-col justify-start items-start list-disc px-6 lg:px-10">
+                            <li>Full-body machine polish</li>
+                            <li class="leading-6">9H ceramic coating application</li>
+                            <li class="leading-6">Water-repellent windshield treatment</li>
+                            <li class="leading-6">Paint depth and swirl correction</li>
+                            <li>6-month free check-up</li>
+                        </ul>
+                        <div class="text-sm lg:text-base font-light font-['Poppins'] text-center mt-4">
+                            <h3>Duration: 4–6 hours</h3>
+                            <h3>Ideal for: New cars, luxury vehicles, car lovers</h3>
+                        </div>
+                        <button class="w-40 h-10 relative rounded-tl-[5px] rounded-br-[5px] rounded-tr-[30px] rounded-bl-[30px] outline outline-[3px] outline-offset-[-3px] outline-red-700 overflow-hidden text-red-700 text-xs font-normal font-['Zen_Dots'] transition hover:bg-red-700 hover:text-black">₹9,999*</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="AOS" class="w-full h-auto lg:h-[28.5rem] flex flex-col justify-center items-center gap-10 px-6 lg:px-24 py-20 lg:py-0 reveal">
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="text-lg lg:text-4xl font-normal font-['Zen_Dots']">Add-On Services</h1>
+                <h5 class="text-[12px] lg:text-sm font-normal font-['Poppins']">Customize any package with extras like:</h5>
+            </div>
+            <div id="add-ons" class="w-full h-auto grid grid-cols-1 lg:grid-cols-3 justify-center items-center gap-x-20 gap-y-6 text-sm font-normal font-['Poppins']">
+                <div id="aos" class="flex justify-start items-center gap-2 rounded-2xl outline outline-[1.50px] outline-offset-[-1.50px] outline-white py-4 lg:py-6 px-6 cursor-pointer">
+                    <img src="../SVG/Pluse-icon.svg" loading="lazy" draggable="false" alt="">
+                    <h3 class="w-4/5 text-center">Headlight restoration</h3>
+                </div>
+                <div id="aos" class="flex justify-start items-center gap-2 rounded-2xl outline outline-[1.50px] outline-offset-[-1.50px] outline-white py-4 lg:py-6 px-6 cursor-pointer">
+                    <img src="../SVG/Pluse-icon.svg" loading="lazy" draggable="false" alt="">
+                    <h3 class="w-4/5 text-center">Matte finish protection</h3>
+                </div>
+                <div id="aos" class="flex justify-start items-center gap-2 rounded-2xl outline outline-[1.50px] outline-offset-[-1.50px] outline-white py-4 lg:py-6 px-6 cursor-pointer">
+                    <img src="../SVG/Pluse-icon.svg" loading="lazy" draggable="false" alt="">
+                    <h3 class="w-4/5 text-center">Alloy wheel polishing</h3>
+                </div>
+                <div id="aos" class="flex justify-start items-center gap-2 rounded-2xl outline outline-[1.50px] outline-offset-[-1.50px] outline-white py-4 lg:py-6 px-6 cursor-pointer">
+                    <img src="../SVG/Pluse-icon.svg" loading="lazy" draggable="false" alt="">
+                    <h3 class="w-4/5 text-center">Pet hair removal</h3>
+                </div>
+                <div id="aos" class="flex justify-start items-center gap-2 rounded-2xl outline outline-[1.50px] outline-offset-[-1.50px] outline-white py-4 lg:py-6 px-6 cursor-pointer">
+                    <img src="../SVG/Pluse-icon.svg" loading="lazy" draggable="false" alt="">
+                    <h3 class="w-4/5 text-center">Engine detailing</h3>
+                </div>
+                <div id="aos" class="flex justify-start items-center gap-2 rounded-2xl outline outline-[1.50px] outline-offset-[-1.50px] outline-white py-4 lg:py-6 px-6 cursor-pointer">
+                    <img src="../SVG/Pluse-icon.svg" loading="lazy" draggable="false" alt="">
+                    <h3 class="w-4/5 text-center">Ozone odor treatment</h3>
+                </div>
+            </div>
+        </div>
+        <div id="COP" class="w-full h-auto hidden lg:flex justify-center py-10 px-6 lg:px-24 reveal">
+            <div class="w-full max-w-6xl rounded-2xl border border-white/40 text-white">
+                <h2 class="px-6 py-6 text-2xl lg:text-4xl font-['Zen_Dots'] text-center">
+                    Compare Our Packages At a Glance
+                </h2>
+                <div class="overflow-x-auto grid grid-row-2 text-sm font-['Poppins'] p-4">
+                    <div class="w-full grid grid-cols-4 text-sm font-['Poppins'] px-4 text-center">
+                        <div class="px-4 text-left font-semibold">Feature</div>
+                        <div class="px-4 font-semibold">Basic Shine</div>
+                        <div class="px-4 font-semibold">Premium Detail</div>
+                        <div class="px-4 font-semibold">Ultimate Ceramic</div>
+                    </div>
+                    <div class="w-full grid grid-cols-4 text-sm font-['Poppins'] p-4  text-center">
+                        <div class="border-y border-white/30 p-4 text-left">Hand Wash & Dry</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4 text-left">Tire & Rim Cleaning</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4 text-left">Interior Vacuum</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4 text-left">Streak-Free Window Cleaning</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4 text-left">Air Freshener</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4 text-left">Clay Bar Treatment</div>
+                        <div class="border-y border-white/30 p-4">❌</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4 text-left">Leather Conditioning / Interior </div>
+                        <div class="border-y border-white/30 p-4">❌</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4 text-left">Shampoo</div>
+                        <div class="border-y border-white/30 p-4">❌</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4 text-left">Dashboard & Trim Polish</div>
+                        <div class="border-y border-white/30 p-4">❌</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4 text-left">Engine Bay Detailing</div>
+                        <div class="border-y border-white/30 p-4">❌</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4 text-left">Spray Wax Protection</div>
+                        <div class="border-y border-white/30 p-4">❌</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4 text-left">Full Body Machine Polish</div>
+                        <div class="border-y border-white/30 p-4">❌</div>
+                        <div class="border-y border-white/30 p-4">❌</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4 text-left">9H Ceramic Coating</div>
+                        <div class="border-y border-white/30 p-4">❌</div>
+                        <div class="border-y border-white/30 p-4">❌</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4 text-left">Paint Correction & Swirl Removal</div>
+                        <div class="border-y border-white/30 p-4">❌</div>
+                        <div class="border-y border-white/30 p-4">❌</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-y border-white/30 p-4 text-left">Water-Repellent Glass Treatment</div>
+                        <div class="border-y border-white/30 p-4">❌</div>
+                        <div class="border-y border-white/30 p-4">❌</div>
+                        <div class="border-y border-white/30 p-4">✅</div>
+                        <div class="border-t border-white/30 p-4 text-left">Free 6-Month Check-Up</div>
+                        <div class="border-t border-white/30 p-4">❌</div>
+                        <div class="border-t border-white/30 p-4">❌</div>
+                        <div class="border-t border-white/30 p-4">✅</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="BYP" class="w-full shadow-[0_4px_4px_rgba(255_255_255_0.2),0_-4px_4px_rgba(255_255_255_0.2)] border-t border-1 border-zinc-700 reveal">
+          <div class="w-full px-6 py-12 flex flex-col items-center text-center gap-2 lg:gap-6">
+            <h2 class="w-full text-lg lg:text-4xl font-['Zen_Dots'] text-white">Book Your Package Today</h2>
+            <p class="w-full text-[12px] lg:text-base font-['Inter'] text-white leading-6">Your car deserves the best. Click below to schedule your detailing session and give your vehicle the CaliperPlus touch.</p>
+            <a href="../Pages/Service.html" draggable="false" class="w-40 lg:w-56 h-10 lg:h-14 flex items-center justify-center rounded-tl-[5px] lg:rounded-tl-[5px] rounded-br-[5px] lg:rounded-br-[5px] rounded-tr-[16px] lg:rounded-tr-[30px] rounded-bl-[16px] lg:rounded-bl-[30px] outline outline-[3px] outline-offset-[-3px] outline-red-700 text-red-700 font-['Zen_Dots'] text-[10.5px] lg:text-base transition hover:bg-red-700 hover:text-black">Book a Service</a>
+          </div>
+        </section>
+        <div id="CFDS" class="w-full py-10 lg:px-24 border-t border-1 border-zinc-700">
+            <section class="w-full flex justify-center lg:py-12">
+              <div class="w-full bg-zinc-500/20 rounded-2xl flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 p-10 text-white reveal">
+                <div class="">
+                  <h2 class="text-xl lg:text-4xl font-['Zen_Dots'] mb-2 lg:mb-4 text-center lg:text-left"> Corporate & Fleet Detailing Solutions</h2>
+                  <p class="w-full text-[12px] lg:text-sm font-['Inter'] leading-6 text-white/90 text-center lg:text-left">Own a fleet of vehicles or manage a corporate car pool? We offer custom detailing contracts for businesses and premium concierge services for luxury fleets.</p>
+                </div>
+                <a href="Service.html" draggable="false" class="lg:w-[30rem] rounded-2xl border border-white px-6 py-3 flex text-white flex justify-center items-center self-end">
+                  <img src="../SVG/CFDS-Phone.svg" loading="lazy" draggable="false" alt="Phone enquiry icon" class="w-6 h-6"/>
+                  <p class="text-xs font-semibold font-['Inter'] leading-6 text-center">Enquire now for volume discounts and maintenance packages.</p>
+                </a>
+              </div>
+            </section>
+        </div>
+
+        <footer class="w-full h-[40rem] lg:h-[32rem] bg-stone-900 border-t border-1 border-zinc-700 reveal">
+            <div id="con" class="w-full h-[90%] flex flex-col lg:flex-row justify-center items-start gap-10 lg:gap-6 border-b border-1 border-zinc-700 py-16">
+                <div class="w-60 font-['Inter'] hidden lg:flex flex-col justify-start items-start gap-8 text-sm font-light">
+                    <h3 class="font-semibold">Our Services</h3>
+                    <div class="flex flex-col justify-start items-start gap-3">
+                        <h5 class="cursor-pointer">Ceramic & Graphene Coatings</h5>
+                        <h5 class="cursor-pointer">Paint Protection Films</h5>
+                        <h5 class="cursor-pointer">Body-Shop (Denting & Painting)</h5>
+                        <h5 class="cursor-pointer">Wrap Jobs</h5>
+                        <h5 class="cursor-pointer">Detailing and Interior cleaning</h5>
+                        <h5 class="cursor-pointer">Insurance Claims</h5>
+                        <h5 class="cursor-pointer">Other Services</h5>
+                    </div>
+                </div>
+                <div class="w-60 font-['Inter'] hidden lg:flex flex-col justify-start items-start gap-8 text-sm font-light">
+                    <h3 class="font-semibold">Other Services</h3>
+                    <div class="flex flex-col justify-start items-start gap-3">
+                        <h5 class="cursor-pointer">Under-body anti-rust coatings</h5>
+                        <h5 class="cursor-pointer">Windshield and all glass polishing</h5>
+                        <h5 class="cursor-pointer">Steering, Gear knob and Gear</h5>
+                        <h5 class="cursor-pointer">bellow covers</h5>
+                        <h5 class="cursor-pointer">Headlight and taillight restorations</h5>
+                        <h5 class="cursor-pointer">Body Washing and Vacuuming</h5>
+                        <h5 class="cursor-pointer">Headliners replacement</h5>
+                    </div>
+                </div>
+                <div class="w-60 font-['Inter'] hidden lg:flex flex-col justify-start items-start gap-6 text-sm font-light">
+                    <h3 class="font-semibold">Visit The Store</h3>
+                    <div class="flex flex-col justify-start items-start gap-6">
+                        <div>
+                            <h5 class="leading-8">Plot No. 142, Industrial Auto Zone Near Western Bypass, Sector 58 Newtown, Mumbai - 400076 Maharashtra, India</h5>
+                        </div>
+                        <div>
+                            <img src="../SVG/Map.svg" loading="lazy" draggable="false">
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-60 font-['Inter'] flex flex-col justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-6 text-sm font-light px-2">
+                    <h3 class="font-semibold">Contact Us</h3>
+                    <div class="flex flex-col justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-6">
+                        <h5 class="leading-8 text-center lg:text-left lg:hidden flex">Email: contact@CaliperPlus.in<br>&#40;Please do not send service/work enquiry on this mail. Click service enquiry on top of the page for enquiries&#41;</h5>
+                        <h5 class="leading-8 text-center lg:text-left hidden lg:flex">Email: contact@CaliperPlus.in &#40;Please do not send service/work enquiry on this mail. Click service enquiry on top of the page for enquiries&#41;</h5>
+                        <h5>Phone: +91 87546 45879</h5>
+                    </div>
+                </div>
+                <div class="w-full lg:w-60 font-['Inter'] flex lg:hidden flex-col justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-6 text-sm font-light">
+                    <h3 class="font-semibold">Visit The Store</h3>
+                    <div class="flex flex-col justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-6">
+                        <div>
+                            <h5 class="leading-8 text-center lg:text-left">Plot No. 142, Industrial Auto Zone Near Western Bypass, Sector 58 Newtown, Mumbai - 400076 Maharashtra, India</h5>
+                        </div>
+                        <div>
+                            <img src="../SVG/Map.svg" loading="lazy" draggable="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Cright" class="w-full h-[10%] flex justify-center items-center border-t border-1 border-zinc-700 font-['Inter'] text-xs">
+                <h5 class="opacity-50 hover:underline cursor-pointer underline-offset-2">&#xA9; 2025 CaliperPlus. All rights reserved.</h5>
+            </div>
+        </footer>
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="EOP.js" type="module"></script>
+        <script src="../ComAnimation.js" type="module"></script>
+
+    </body>
+</html>

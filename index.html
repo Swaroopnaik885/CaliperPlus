@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html class="overflow-x-hidden scrollbar-hide" lang="en">
+    <head>
+        <title>Home Page</title>
+
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/png" href="SVG/Logo.svg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <style>
+            :root {
+                --white: #FFFFFF;
+                --red: #D80000;
+                --black: #0F0F0F;
+                --font-zendots: "Zen Dots", sans-serif;
+                --font-ubuntu: "Ubuntu", sans-serif;
+                --font-poppins: "Poppins", sans-serif;
+            }
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                user-select: none;
+            }
+            body {
+                user-select: none;
+            }
+            .scrollbar-hide {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+            .reveal {
+                opacity: 0;
+                transform: translateY(60px) scale(0.95);
+                filter: blur(10px);
+                will-change: transform, opacity, filter;
+            }
+            img {
+              -webkit-user-drag: none;
+              user-drag: none;
+            }
+        </style>
+
+    </head>
+    <body id="body" class="w-full h-auto m-0 p-0 scroll-smooth select-none relative bg-black text-white lg:overflow-x-visible">
+
+        <nav class="w-full h-[5.3rem] px-24 hidden lg:flex justify-between items-center bg-black sticky top-0 z-50 shadow-[0px_4px_13.5px_1px_rgba(255,255,255,0.08)]">
+            <a href="index.html" id="logo" draggable="false" class="w-auto h-auto flex justify-center items-center gap-2 cursor-pointer">
+                <img src="SVG/Logo.svg" alt="Logo" loading="lazy" draggable="false" class="w-16 h-auto">
+                <div id="L-Text" class="w-auto h-auto flex flex-col justify-center items-center">
+                    <h1 class="font-['Zen_Dots'] text-sm">CaliperPlus</h1>
+                    <h6 class="font-['Ubuntu'] text-[8px] font-medium">YOUR CAR Detailing SHOP</h6>
+                </div>
+            </a>
+            <ul class="w-auto h-auto flex justify-center items-center gap-16 font-['Ubuntu'] text-sm font-medium">
+                <details id="Hover-Details" class="w-auto h-auto relative list-none text-center group  flex justify-center items-center">
+                    <summary class="w-auto h-auto relative list-none flex justify-center items-center gap-1 cursor-pointer">
+                        <h3 class="uppercase font-medium tracking-wider hover:text-red-700">Our Services</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="transition-transform duration-200 group-open:rotate-180" width="12" height="12" viewBox="0 0 16 16"><path fill="#fff" fill-rule="non-zero" d="M13.069 5.157L8.384 9.768a.546.546 0 0 1-.768 0L2.93 5.158a.55.55 0 0 0-.771 0a.53.53 0 0 0 0 .759l4.684 4.61a1.65 1.65 0 0 0 2.312 0l4.684-4.61a.53.53 0 0 0 0-.76a.55.55 0 0 0-.771 0"/></svg>
+                    </summary>
+                    <ul class="w-[12rem] h-auto absolute list-none text-center flex flex-col justify-start items-center gap-4 text-white text-sm font-medium font-['Poppins'] z-50 bg-black mt-10 py-6 -ml-40 shadow-[0px_4px_11.199999809265137px_0px_rgba(255,255,255,0.10)] rounded">
+                        <a href="Pages/CG.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Ceramic & Graphene Coatings</a>
+                        <a href="Pages/PPF.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Paint Protection Film</a>
+                        <a href="Pages/BS.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Body-Shop (Denting & Painting)</a>
+                        <a href="Pages/WW.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Wrap Jobs</a>
+                        <a href="Pages/DI.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Detailing and Interior cleaning</a>
+                        <a href="Pages/IC.html" draggable="false" class="hover:text-red-700 cursor-pointer transition">Insurance Claims</a>
+                        <a href="#" draggable="false" class="hover:text-red-700 cursor-pointer transition">Other Services</a>
+                    </ul>
+                </details>
+                <a href="Pages/Service.html" draggable="false" class="w-auto h-auto uppercase font-medium tracking-wider hover:text-red-700 cursor-pointer transition">Service Enquiry</a>
+            </ul>
+        </nav>
+
+        <nav class="w-full h-auto px-6 py-6 flex lg:hidden justify-between items-center bg-black sticky top-0 z-50 shadow-[0px_4px_13.5px_1px_rgba(255,255,255,0.08)]">
+            <a href="index.html" id="logo" draggable="false" class="w-auto h-auto flex justify-center items-center gap-1 cursor-pointer">
+                <img src="SVG/Logo.svg" alt="Logo" draggable="false" class="w-10 h-auto">
+                <div id="L-Text" class="w-auto h-auto flex flex-col justify-center items-start gap-1">
+                    <h1 class="text-[9.91px] font-normal font-['Zen_Dots'] leading-3">CaliperPlus</h1>
+                    <h6 class="font-['Ubuntu'] text-[4.58px] font-medium uppercase leading-[5.40px] tracking-wide">YOUR CAR Detailing SHOP</h6>
+                </div>
+            </a>
+            <details class="relative group">
+                <summary class="list-none cursor-pointer flex items-center justify-center p-2 rounded-xl">
+                    <img src="SVG/Hamburgers.svg" alt="Open services menu" draggable="false" loading="lazy">
+                </summary>
+                <div class="absolute top-12 -translate-x-[86vw] self-center w-[100vw] bg-black text-white shadow-2xl p-8 flex flex-col justify-center items-center gap-3 animate-[fadeIn_0.5s_ease-in-out]">
+                    <a href="Pages/Service.html" draggable="false" class="text-base font-medium font-['Ubuntu'] uppercase tracking-widest text-center hover:text-red-700 cursor-pointer transition">Service Enquiry</a>
+                    <div class="w-24 h-px bg-white/40"></div>
+                    <h3 class="text-base font-medium font-['Ubuntu'] uppercase tracking-widest text-center">Our Services</h3>
+                    <ul class="flex flex-col gap-3 text-base font-normal font-['Poppins'] text-center">
+                        <a href="Pages/CG.html" draggable="false" class="hover:text-red-700 transition">Ceramic & Graphene Coatings</a>
+                        <a href="Pages/PPF.html" draggable="false" class="hover:text-red-700 transition">Paint Protection Films</a>
+                        <a href="Pages/BS.html" draggable="false" class="hover:text-red-700 transition">Body-Shop (Denting & Painting)</a>
+                        <a href="Pages/WW.html" draggable="false" class="hover:text-red-700 transition">Wrap Jobs</a>
+                        <a href="Pages/DI.html" draggable="false" class="hover:text-red-700 transition">Detailing & Interior Cleaning</a>
+                        <a href="Pages/IC.html" draggable="false" class="hover:text-red-700 transition">Insurance Claims</a>
+                        <a href="#" draggable="false" class="hover:text-red-700 transition">Other Services</a>
+                    </ul>
+                </div>
+            </details>
+        </nav>
+
+        <div id="Hero-Section" class="w-full lg:w-[90%] h-[25rem] lg:h-[46rem] px-6 lg:px-24 bg-[url('Images/Video-Project.gif')] bg-cover bg-[position:70%_center] lg:bg-center flex justify-start items-center bg-no-repeat relative overflow-hidden">
+            <div class="w-64 h-full absolute bg-gradient-to-l from-black to-transparent right-0 hidden lg:block"></div>
+            <div class="w-full lg:w-[28.75rem] flex flex-col justify-center items-start gap-4 lg:gap-10 lg:mt-10 z-20">
+                <h1 class="text-xl lg:text-3xl font-['Zen_Dots'] w-full text-center lg:text-left">Restore. Protect. Shine.</h1>
+                <h6 class="text-[10.5px] lg:text-sm font-['Poppins'] tracking-wide text-center lg:text-left">At CaliperPlus, we bring showroom-quality detailing to your driveway. From deep cleaning to ceramic coating, your car gets the care it deserves.CaliperPlus delivers premium detailing, from spotless cleaning to lasting ceramic protection. Your car, treated like new.</h6>
+                <div id="Hero-Btns" class="w-full flex gap-2 justify-center items-center">
+                    <button id="SP-btn" class="w-36 lg:w-56 h-10 lg:h-12 relative rounded-tl-[5px] lg:rounded-tl-[5px] rounded-br-[5px] lg:rounded-br-[5px] rounded-tr-[16px] lg:rounded-tr-[30px] rounded-bl-[16px] lg:rounded-bl-[30px] outline outline-[3px] outline-offset-[-3px] outline-red-700 overflow-hidden text-red-700 text-[10.5px] lg:text-xs font-normal font-['Zen_Dots'] transition hover:bg-red-700 hover:text-black">Book a Service</button>
+                    <button id="EOP-btn" class="w-36 lg:w-56 h-10 lg:h-12 relative rounded-bl-[5px] lg:rounded-bl-[5px] rounded-tr-[5px] lg:rounded-tr-[5px] rounded-tl-[16px] lg:rounded-tl-[30px] rounded-br-[16px] lg:rounded-br-[30px] outline outline-1 outline-offset-[-1px] outline-white overflow-hidden text-black text-[10.5px] lg:text-xs font-normal font-['Zen_Dots'] origin-top-left bg-white ">Explore Our Packages</button>
+                </div>
+            </div>
+        </div>
+        <div id="WAW" class="w-full h-[20rem] lg:h-[25rem] flex justify-start items-center relative px-6 lg:px-20 py-10 lg:py-0 overflow-hidden reveal">
+            <img src="Images/Servicing-Home-Mobile.png" loading="lazy" draggable="false" class="flex lg:hidden w-full h-full object-contain absolute opacity-40">
+            <div class="w-3/5 hidden lg:flex justify-start items-center relative h-full overflow-hidden">
+                <img src="Images\Servicing-Home.png" loading="lazy" draggable="false" class="w-[36rem] lg:h-full">
+                <div class="w-64 h-full absolute bg-gradient-to-l from-black to-transparent right-20"></div>
+            </div>
+            <div class="w-full lg:w-2/5 h-full flex flex-col justify-center items-center lg:items-start lg:px-10 gap-4 lg:gap-10 z-20">
+                <h1 class="text-xl lg:text-3xl font-['Zen_Dots']">Who We Are</h1>
+                <h6 class="text-[10.5px] lg:text-sm font-normal font-['Inter'] lg:leading-6 lg:w-84 text-center lg:text-left">CaliperPlus is your trusted neighborhood car detailing shop dedicated to delivering precision, protection, and perfection. With a passion for cars and an eye for detail, our expert team transforms your vehicle inside and out, leaving it spotless, protected, and ready to impress.</h6>
+            </div>
+        </div>
+        <div id="Our-services" class="w-full flex flex-col items-center gap-6 py-16 overflow-hidden  reveal">
+            <h1 class="text-xl lg:text-4xl font-['Zen_Dots']">Our Services</h1>
+            <div id="Services" class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="Pages/CG.html" draggable="false"><img src="Images/OS-Home-1.png" loading="lazy" draggable="false" class="service-img hover:scale-105 transition-transform duration-300"></a>
+                <a href="Pages/PPF.html" draggable="false"><img src="Images/OS-Home-2.png" loading="lazy" draggable="false" class="service-img hover:scale-105 transition-transform duration-300"></a>
+                <a href="Pages/WW.html" draggable="false"><img src="Images/OS-Home-3.png" loading="lazy" draggable="false" class="service-img hover:scale-105 transition-transform duration-300"></a>
+                <a href="#" draggable="false"><img src="Images/OS-Home-4.png" loading="lazy" draggable="false" class="service-img hover:scale-105 transition-transform duration-300"></a>
+                <a href="#" draggable="false" class="extra hidden opacity-0 translate-y-6 transition-all duration-500">
+                    <img src="Images/OS-Home-5.png" loading="lazy" draggable="false" class="service-img service-img hover:scale-105 transition-transform duration-300">
+                </a>
+                <a href="Pages/IC.html" draggable="false" class="extra hidden opacity-0 translate-y-6 transition-all duration-500">
+                    <img src="Images/OS-Home-6.png" loading="lazy" draggable="false" class="service-img hover:scale-105 transition-transform duration-300">
+                </a>
+                <a href="Pages/BS.html" draggable="false" class="extra hidden opacity-0 translate-y-6 transition-all duration-500">
+                    <img src="Images/OS-Home-7.png" loading="lazy" draggable="false" class="service-img hover:scale-105 transition-transform duration-300">
+                </a>
+                <a href="Pages/DI.html" draggable="false" class="extra hidden opacity-0 translate-y-6 transition-all duration-500">
+                    <img src="Images/OS-Home-8.png" loading="lazy" draggable="false" class="service-img service-img hover:scale-105 transition-transform duration-300">
+                </a>
+            </div>
+            <button id="toggleServices" class="w-48 h-10 lg:w-56 lg:h-12 relative rounded-tl rounded-tr-[20.55px] rounded-bl-[20.55px] rounded-br lg:rounded-bl-[5px] lg:rounded-tr-[5px] lg:rounded-tl-[30px] lg:rounded-br-[30px] outline outline-[3px] outline-offset-[-3px] outline-white overflow-hidden text-white text-[12px] lg:text-sx font-normal font-['Zen_Dots'] origin-top-left transition-all duration-300 hover:bg-white hover:text-black">View All Services</button>
+        </div>
+        <div id="WCC" class="w-full h-[18rem] lg:h-[30.6rem] bg-[url('Images/WC-Home-BG.png')] bg-cover lg:bg-contain bg-center flex justify-center lg:justify-start items-center lg:items-center bg-no-repeat relative lg:px-20 overflow-hidden reveal">
+            <div class="absolute inset-0 bg-black/80 flex lg:hidden z-10"></div>
+            <div class="flex flex-col justify-center items-center lg:justify-start lg:items-start gap-6 lg:gap-10 z-20">
+                <h1 class="text-xl lg:text-4xl font-normal font-['Zen_Dots'] leading-6">Why Choose CaliperPlus?</h1>
+                <div class="text-sm font-['Poppins'] leading-10 lg:leading-6">
+                    ✅ Professional-Grade Products <br>
+                    ✅ Skilled & Certified Technicians <br>
+                    ✅ Convenient Service Scheduling <br>
+                    ✅ 100% Satisfaction Guarantee
+                </div>
+            </div>
+        </div>
+        <div id="CE" class="w-full h-[40rem] lg:h-[40rem] flex flex-col justify-start items-center gap-6 lg:gap-10 py-10 lg:py-0 px-6 lg:px-44 relative overflow-hidden reveal">
+            <h1 class="text-xl lg:text-4xl font-normal font-['Zen_Dots'] leading-6 relative">Client Experiences</h1>
+            <div id="CE-cards" class="relative w-[22rem] lg:w-[64rem] h-[23rem] ml-20 lg:mx-auto "></div>
+            <button id="CE-Button" class="select-none bg-[url('SVG/Arrow.svg')] bg-cover bg-center bg-no-repeat w-[5rem] lg:w-[4.3rem] h-[5rem] lg:h-[4.3rem] absolute z-40 self-end mt-[30rem] lg:mt-96"></button>
+        </div>
+        <div id="SDC" class="w-full h-[20rem] lg:h-[30rem] flex justify-end items-center relative lg:px-24 mt-10 lg:mt-0 mb-10 lg:mb-0 overflow-hidden reveal">
+            <div class="w-[60rem] h-80 absolute bg-gradient-to-b from-black to-transparent left-0 z-20 -mt-80 hidden lg:block"></div>
+            <img src="Images/SDC-Home-BG.png" loading="lazy" draggable="false" class="w-[30rem] lg:w-auto h-auto lg:h-full absolute left-0 z-10 opacity-50 lg:opacity-100">
+            <div class="lg:w-3/5 h-full relative flex flex-col justify-center items-start gap-4 lg:gap-10 px-10 z-30">
+                <h1 class="text-xl lg:text-4xl font-normal font-['Zen_Dots'] relative text-center">Stay Detailed with CaliperPlus</h1>
+                <div class="w-full flex justify-center gap-8 lg:gap-10 items-center">
+                    <img src="SVG/Instagram.svg" loading="lazy" draggable="false"    class="w-6 lg:w-auto lg:h-auto cursor-pointer">
+                    <img src="SVG/Facebook.svg" loading="lazy" draggable="false"     class="w-6 lg:w-auto lg:h-auto cursor-pointer">
+                    <img src="SVG/Youtube.svg" loading="lazy" draggable="false"      class="w-6 lg:w-auto lg:h-auto cursor-pointer">
+                    <img src="SVG/Twitter.svg" loading="lazy" draggable="false"      class="w-6 lg:w-auto lg:h-auto cursor-pointer">
+                </div>
+            </div>
+        </div>
+
+        <footer class="w-full h-[40rem] lg:h-[32rem] bg-stone-900 reveal">
+            <div id="con" class="w-full h-[90%] flex flex-col lg:flex-row justify-center items-start gap-10 lg:gap-6 border-b border-1 border-zinc-700 py-16">
+                <div class="w-60 font-['Inter'] hidden lg:flex flex-col justify-start items-start gap-8 text-sm font-light">
+                    <h3 class="font-semibold">Our Services</h3>
+                    <div class="flex flex-col justify-start items-start gap-3">
+                        <a href="Pages/CG.html" draggable="false" class="cursor-pointer">Ceramic & Graphene Coatings</a>
+                        <a href="Pages/PPF.html" draggable="false" class="cursor-pointer">Paint Protection Films</a>
+                        <a href="Pages/BS.html" draggable="false" class="cursor-pointer">Body-Shop (Denting & Painting)</a>
+                        <a href="Pages/WW.html" draggable="false" class="cursor-pointer">Wrap Jobs</a>
+                        <a href="Pages/DI.html" draggable="false" class="cursor-pointer">Detailing and Interior cleaning</a>
+                        <a href="Pages/IC.html" draggable="false" class="cursor-pointer">Insurance Claims</a>
+                        <a href="#" draggable="false" class="cursor-pointer">Other Services</a>
+                    </div>
+                </div>
+                <div class="w-60 font-['Inter'] hidden lg:flex flex-col justify-start items-start gap-8 text-sm font-light">
+                    <h3 class="font-semibold">Other Services</h3>
+                    <div class="flex flex-col justify-start items-start gap-3">
+                        <h5 class="cursor-pointer">Under-body anti-rust coatings</h5>
+                        <h5 class="cursor-pointer">Windshield and all glass polishing</h5>
+                        <h5 class="cursor-pointer">Steering, Gear knob and Gear</h5>
+                        <h5 class="cursor-pointer">bellow covers</h5>
+                        <h5 class="cursor-pointer">Headlight and taillight restorations</h5>
+                        <h5 class="cursor-pointer">Body Washing and Vacuuming</h5>
+                        <h5 class="cursor-pointer">Headliners replacement</h5>
+                    </div>
+                </div>
+                <div class="w-60 font-['Inter'] hidden lg:flex flex-col justify-start items-start gap-6 text-sm font-light">
+                    <h3 class="font-semibold">Visit The Store</h3>
+                    <div class="flex flex-col justify-start items-start gap-6">
+                        <div>
+                            <h5 class="leading-8">Plot No. 142, Industrial Auto Zone Near Western Bypass, Sector 58 Newtown, Mumbai - 400076 Maharashtra, India</h5>
+                        </div>
+                        <div>
+                            <img src="SVG/Map.svg" loading="lazy" draggable="false">
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-60 font-['Inter'] flex flex-col justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-6 text-sm font-light px-2">
+                    <h3 class="font-semibold">Contact Us</h3>
+                    <div class="flex flex-col justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-6">
+                        <h5 class="leading-8 text-center lg:text-left lg:hidden flex">Email: contact@CaliperPlus.in<br>&#40;Please do not send service/work enquiry on this mail. Click service enquiry on top of the page for enquiries&#41;</h5>
+                        <h5 class="leading-8 text-center lg:text-left hidden lg:flex">Email: contact@CaliperPlus.in &#40;Please do not send service/work enquiry on this mail. Click service enquiry on top of the page for enquiries&#41;</h5>
+                        <h5>Phone: +91 87546 45879</h5>
+                    </div>
+                </div>
+                <div class="w-full lg:w-60 font-['Inter'] flex lg:hidden flex-col justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-6 text-sm font-light">
+                    <h3 class="font-semibold">Visit The Store</h3>
+                    <div class="flex flex-col justify-center items-center lg:justify-start lg:items-start gap-2 lg:gap-6">
+                        <div>
+                            <h5 class="leading-8 text-center lg:text-left">Plot No. 142, Industrial Auto Zone Near Western Bypass, Sector 58 Newtown, Mumbai - 400076 Maharashtra, India</h5>
+                        </div>
+                        <div>
+                            <img src="SVG/Map.svg" loading="lazy" draggable="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Cright" class="w-full h-[10%] flex justify-center items-center border-t border-1 border-zinc-700 font-['Inter'] text-xs">
+                <h5 class="opacity-50 hover:underline cursor-pointer underline-offset-2">&#xA9; 2025 CaliperPlus. All rights reserved.</h5>
+            </div>
+        </footer>
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="script.js" type="module"></script>
+        <script src="ComAnimation.js" type="module"></script>
+ 
+    </body>
+</html>
