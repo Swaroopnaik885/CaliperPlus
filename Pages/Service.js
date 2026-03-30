@@ -42,48 +42,71 @@ function saveServiceFormData(
 
 // JS for Form Submission
 // Form Submission
-document.querySelector("#ServiceForm").addEventListener("submit", function(e) {
+document.querySelector("#ServiceForm").addEventListener("submit", async function (e) {
+  e.preventDefault();
 
-    e.preventDefault();   // STOP normal form submission
+  const form = document.getElementById("ServiceForm");
+  const formData = new FormData(form);
+  const note1 = document.getElementById("note1");
 
-    let form = document.getElementById("ServiceForm");
-    let formData = new FormData(form);
-    let note1 = document.getElementById("note1");
-    // Hide initially
-    note1.style.display = "none";
+  note1.style.display = "none";
 
-    // ---------- 1️⃣ SAVE TO FIREBASE ----------
-    saveServiceFormData(
-        formData.get("name"),
-        formData.get("email"),
-        formData.get("phone"),
-        formData.get("state"),
-        formData.get("city"),
-        formData.get("pinCode"),
-        formData.get("VRN"),
-        formData.get("carMake"),
-        formData.get("carModel"),
-        formData.get("serviceRequired"),
-        formData.get("comments")
+  try {
+    // 1️⃣ Save to Firebase first
+    await saveServiceFormData(
+      formData.get("name"),
+      formData.get("email"),
+      formData.get("phone"),
+      formData.get("state"),
+      formData.get("city"),
+      formData.get("pinCode"),
+      formData.get("VRN"),
+      formData.get("carMake"),
+      formData.get("carModel"),
+      formData.get("serviceRequired"),
+      formData.get("comments")
     );
 
-    // ---------- 2️⃣ SEND TO PHP ----------
-    fetch("service.php", {
-        method: "POST",
-        body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-        alert("Saved to Firebase + MySQL successfully!");
-        console.log(data);
-        form.reset();
-        // SHOW after success
-        note1.style.display = "flex";
-    })
-    .catch(error => {
-        console.error("Error:", error);
+    // 2️⃣ Send email using EmailJS
+    await emailjs.send("service_fi0xb7m", "template_hyz516n", {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      state: formData.get("state"),
+      city: formData.get("city"),
+      pinCode: formData.get("pinCode"),
+      VRN: formData.get("VRN"),
+      carMake: formData.get("carMake"),
+      carModel: formData.get("carModel"),
+      serviceRequired: formData.get("serviceRequired"),
+      comments: formData.get("comments"),
+      time: new Date().toLocaleString()
     });
 
+    // 3️⃣ Keep PHP call, but don't let it break anything if unavailable
+    try {
+      const response = await fetch("service.php", {
+        method: "POST",
+        body: formData
+      });
+
+      if (response.ok) {
+        const data = await response.text();
+        console.log("PHP Response:", data);
+      }
+    } catch (phpError) {
+      console.warn("service.php not available after deployment:", phpError);
+    }
+
+    // 4️⃣ Success UI
+    form.reset();
+    note1.style.display = "flex";
+    alert("Form submitted successfully!");
+
+  } catch (error) {
+    console.error("Submission Error:", error);
+    alert("Something went wrong while submitting the form.");
+  }
 });
 
 
