@@ -37,7 +37,7 @@
         </style>
 
     </head>
-    <body id="body" class="w-full h-auto m-0 p-0 scroll-smooth select-none relative bg-black text-white lg:overflow-x-visible">
+    <body id="body" class="w-full h-auto m-0 p-0 scroll-smooth select-none relative bg-black text-white lg:overflow-x-visible flec flex-col justify-start items-center">
 
         <nav class="w-full h-[5.3rem] px-24 hidden lg:flex justify-between items-center bg-black sticky top-0 z-50 shadow-[0px_4px_13.5px_1px_rgba(255,255,255,0.08)]">
             <a href="../index.html" id="logo" draggable="false" class="w-auto h-auto flex justify-center items-center gap-2 cursor-pointer">
@@ -79,7 +79,7 @@
                 <summary class="list-none cursor-pointer flex items-center justify-center p-2 rounded-xl">
                     <img src="../SVG/Hamburgers.svg" loading="lazy" alt="Open services menu" draggable="false">
                 </summary>
-                <div class="absolute top-12 -translate-x-[82.5vw] self-center w-[100vw] bg-black text-white shadow-2xl p-8 flex flex-col justify-center items-center gap-3 animate-[fadeIn_0.5s_ease-in-out]">
+                <div class="absolute top-12 -right-6 self-center w-[100vw] bg-black text-white shadow-2xl p-8 flex flex-col justify-center items-center gap-3 animate-[fadeIn_0.5s_ease-in-out]">
                     <a href="../Pages/Service.html" draggable="false" class="text-base font-medium font-['Ubuntu'] uppercase tracking-widest text-center hover:text-red-700 cursor-pointer transition">Service Enquiry</a>
                     <div class="w-24 h-px bg-white/40"></div>
                     <h3 class="text-base font-medium font-['Ubuntu'] uppercase tracking-widest text-center">Our Services</h3>
@@ -96,9 +96,9 @@
             </details>
         </nav>
 
-        <div id="Hero-Section" class="w-full h-auto flex justify-end items-start gap-4 relative px-6 lg:px-0">
+        <div id="Hero-Section" class="max-w-[1440px] mx-auto w-full h-auto flex justify-end items-start gap-4 relative px-6 lg:px-0">
             <div id="C-images" class="w-1/2 hidden lg:block fixed left-0 top-[25px] overflow-hidden" style="height: calc(100vh - 25px); max-width: calc(50vw - 12px);">
-                <img id="ChangeImage" src="../Images/OS-Side-BG-1.png" loading="lazy" draggable="false" class="w-full h-full object-cover object-center z-0 transition-all duration-700 ease-in-out opacity-100 scale-100">
+                <img id="ChangeImage" src="../Images/OS-Side-BG-1.png" loading="lazy" draggable="false" class="w-full lg:h-full object-cover object-center z-0 transition-all duration-700 ease-in-out opacity-100 scale-100">
             </div>
             <div class="w-36 h-full absolute bg-gradient-to-l from-black to-transparent left-[calc(40vw-0px)] self-start"></div>
             <div id="Form" class="w-full lg:w-1/2 h-auto flex flex-col justify-center items-center lg:pr-24 gap-6 my-10 relative">
@@ -107,8 +107,8 @@
                     <h5 class="text-base">&gt;&gt;</h5>
                     <h5 class="cursor-pointer hover:text-red-700">Service Enquiry</h5>
                 </div>
-                <h3 class="text-[12px] lg:text-sm font-medium font-['Poppins'] uppercase leading-6 text-center lg:text-left">WELCOME TO CALIPERPULS – INDIA’S PREMIER BODYSHOP & DETAILING CENTRE. GET A QUICK ESTIMATE FOR YOUR CAR BY FILLING OUT THE FORM BELOW.</h3>
-                <form action="" id="ServiceForm" class="w-full flex flex-col justify-center items-start gap-4 text-sm font-medium font-['Poppins'] uppercase leading-4 tracking-wide">
+                <h3 class="max-w-[35rem] text-[12px] lg:text-sm font-medium font-['Poppins'] uppercase leading-6 text-center lg:text-left">WELCOME TO CALIPERPULS – INDIA’S PREMIER BODYSHOP & DETAILING CENTRE. GET A QUICK ESTIMATE FOR YOUR CAR BY FILLING OUT THE FORM BELOW.</h3>
+                <form action="" id="ServiceForm" class="max-w-[35rem] w-full flex flex-col justify-center items-start gap-4 text-sm font-medium font-['Poppins'] uppercase leading-4 tracking-wide">
                     <div id="name" class="w-full flex flex-col justify-center items-start gap-2">
                         <h3 class="">NAME<span class="text-red-700">*</span></h3>
                         <input type="text" name="name" id="Fname" required pattern="^[A-Za-z. ]+$" placeholder="" class="w-full bg-transparent border-[1px] border-white text-white p-2 rounded-sm [&:focus:invalid:not(:placeholder-shown)]:border-red-700 outline-none focus:outline-none focus:ring-0">

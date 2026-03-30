@@ -42,8 +42,8 @@ function createCards() {
     img.src = src;
 
     img.className = `
-      absolute top-0 -left-16 lg:-left-20 
-      w-[22rem] lg:w-auto h-auto 
+      absolute top-0 left-[clamp(7rem,40vw,0rem)] lg:-left-20 
+      w-[clamp(12rem,40vw,25rem)] lg:w-auto h-auto 
       cursor-pointer
     `;
 
